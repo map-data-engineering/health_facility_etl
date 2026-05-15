@@ -1,0 +1,44 @@
+AfyaScope — Standardized Data Report
+Country      : Tanzania
+Generated    : 2026-05-15 15:56:05.447131
+Rows         : 13075
+Columns      : 32
+
+Column completeness (% non-null):
+  facility_code                       100.0%
+  facility_name                       100.0%
+  zone                                100.0%
+  admin1                              100.0%
+  admin2                              100.0%
+  council                             100.0%
+  admin3                              100.0%
+  admin4                              100.0%
+  facility_type                       100.0%
+  ownership_detail                    100.0%
+  status                              100.0%
+  latitude                             91.7%
+  longitude                            91.4%
+  year                                 99.8%
+  urban_rural_strata                  100.0%
+  catchment_population                100.0%
+  ownership                           100.0%
+  country                             100.0%
+  data_source                         100.0%
+  coordinate_valid                     90.9%
+  open_date                            84.0%
+  open_year                            84.0%
+  uid                                 100.0%
+  coordinate_source                     0.0%
+  inpatient                             0.0%
+  outpatient                            0.0%
+  maternity                             0.0%
+  emergency                             0.0%
+  laboratory                            0.0%
+  malaria_services                      0.0%
+  extraction_date                       0.0%
+  data_quality_flag                   100.0%
+
+Data quality flag distribution:
+
+ high   low 
+11657  1418 

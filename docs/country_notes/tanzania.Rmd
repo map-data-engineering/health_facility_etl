@@ -1,0 +1,38 @@
+---
+title: "Tanzania"
+author: "Christina Myalla"
+date: "2026-02-13"
+output:
+  pdf_document: default
+  pdf: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Country Notes — Tanzania
+
+## Data Source
+Source agency or dataset provider.
+
+## Dataset Version
+Year / release date.
+
+## Coverage
+National health facility registry.
+
+## Known Limitations
+- Missing coordinates for some facilities
+- Inconsistent ownership classification
+- Facility codes not unique in some regions
+
+## Transformation Notes
+- Ownership categories harmonized
+- Coordinates validated against national boundary
+- Some facilities outside boundary flagged
+
+## Special Handling
+Any country-specific cleaning rules.
+
+## Contact / Reference
+Source publication or metadata link.

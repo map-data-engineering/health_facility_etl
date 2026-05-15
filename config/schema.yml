@@ -1,0 +1,203 @@
+# =============================================================
+# Master Standardized Health Facility Schema
+# AfyaScope ETL Pipeline — v2.0
+# =============================================================
+
+standard_columns:
+
+  # -----------------------------------------------------------
+  # IDENTIFIERS
+  # -----------------------------------------------------------
+  uid:
+    type: string
+    description: Stable global facility ID (e.g. TZA-000142); minted by generate_facility_uid.R
+    required: false
+    unique: true
+
+  facility_code:
+    type: string
+    description: Unique facility identifier (national or generated)
+    required: true
+    unique: true
+
+  facility_name:
+    type: string
+    description: Official facility name
+    required: true
+
+  country:
+    type: string
+    description: Country name
+    required: true
+    allowed_values:
+      - Tanzania
+      - Uganda
+      - Zambia
+      - Nigeria
+      - Malawi
+      - Botswana
+
+  # -----------------------------------------------------------
+  # ADMINISTRATIVE HIERARCHY
+  # -----------------------------------------------------------
+  admin1:
+    type: string
+    description: Region / State / Province (level 1)
+    required: true
+
+  admin2:
+    type: string
+    description: District / LGA (level 2)
+    required: false
+
+  admin3:
+    type: string
+    description: Sub-district / Ward / Sub-county (level 3)
+    required: false
+
+  admin4:
+    type: string
+    description: Village / Parish / Locality (level 4)
+    required: false
+
+  zone:
+    type: string
+    description: Zonal grouping (where available, e.g. Tanzania zones)
+    required: false
+
+  # -----------------------------------------------------------
+  # GEOSPATIAL
+  # -----------------------------------------------------------
+  latitude:
+    type: float
+    description: Decimal latitude
+    required: true
+    min_value: -90
+    max_value: 90
+
+  longitude:
+    type: float
+    description: Decimal longitude
+    required: true
+    min_value: -180
+    max_value: 180
+
+  coordinate_valid:
+    type: boolean
+    description: TRUE if coordinates pass within-country boundary check
+    required: false
+
+  coordinate_source:
+    type: string
+    description: Source of the GPS coordinate (e.g. MoH registry, GPS survey, OSM)
+    required: false
+
+  # -----------------------------------------------------------
+  # FACILITY CLASSIFICATION
+  # -----------------------------------------------------------
+  facility_type:
+    type: string
+    description: Health facility type
+    required: true
+
+  ownership:
+    type: string
+    description: Broad ownership category
+    required: true
+    allowed_values:
+      - Public
+      - Private
+      - Faith-Based / NGO
+      - Other
+
+  ownership_detail:
+    type: string
+    description: Detailed ownership as recorded in source (e.g. LGA, FBO, For Profit)
+    required: false
+
+  # -----------------------------------------------------------
+  # OPERATIONAL STATUS & TEMPORAL
+  # -----------------------------------------------------------
+  status:
+    type: string
+    description: Operational status of the facility
+    required: false
+
+  open_date:
+    type: date
+    description: Date facility opened or was registered (NA if unknown or epoch-zero)
+    required: false
+
+  open_year:
+    type: integer
+    description: Year extracted from open_date (cleaned; NA if implausible)
+    required: false
+
+  # -----------------------------------------------------------
+  # POPULATION & CATCHMENT
+  # -----------------------------------------------------------
+  catchment_population:
+    type: integer
+    description: Estimated catchment population (from source where available)
+    required: false
+
+  urban_rural_strata:
+    type: string
+    description: Urban/rural classification from source (e.g. High/Moderate/Low/Very low)
+    required: false
+
+  # -----------------------------------------------------------
+  # SERVICE AVAILABILITY (BOOLEAN)
+  # -----------------------------------------------------------
+  inpatient:
+    type: boolean
+    description: Provides inpatient services
+    required: false
+
+  outpatient:
+    type: boolean
+    description: Provides outpatient services
+    required: false
+
+  maternity:
+    type: boolean
+    description: Provides maternity services
+    required: false
+
+  emergency:
+    type: boolean
+    description: Provides emergency services
+    required: false
+
+  laboratory:
+    type: boolean
+    description: Has laboratory services
+    required: false
+
+  malaria_services:
+    type: boolean
+    description: Provides malaria diagnosis or treatment
+    required: false
+
+  # -----------------------------------------------------------
+  # METADATA / PROVENANCE
+  # -----------------------------------------------------------
+  data_source:
+    type: string
+    description: Original data source (e.g. MoH Tanzania HFR, Uganda MFL)
+    required: true
+
+  extraction_date:
+    type: date
+    description: Date data was extracted from source
+    required: false
+
+  data_quality_flag:
+    type: string
+    description: Overall data quality indicator for this record
+    allowed_values:
+      - high
+      - medium
+      - low
+      - unknown
+    required: false

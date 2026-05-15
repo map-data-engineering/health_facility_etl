@@ -1,0 +1,55 @@
+AfyaScope — Standardized Data Report
+Country      : Nigeria
+Generated    : 2026-05-15 16:58:33.921468
+Rows         : 51022
+Columns      : 43
+
+Column completeness (% non-null):
+  OBJECTID                            100.0%
+  globalid                            100.0%
+  nhfr_uid                             67.7%
+  facility_code                        67.7%
+  country                             100.0%
+  iso                                 100.0%
+  admin1                              100.0%
+  admin2                              100.0%
+  lga_name_disagreement               100.0%
+  admin3                              100.0%
+  ward_name_disagreement              100.0%
+  facility_name                       100.0%
+  facility_name_source                100.0%
+  ownership_type                      100.0%
+  facility_type                       100.0%
+  facility_level_option               100.0%
+  latitude                            100.0%
+  longitude                           100.0%
+  geocoordinates_source               100.0%
+  last_updated                        100.0%
+  x                                   100.0%
+  y                                   100.0%
+  ownership                           100.0%
+  data_source                         100.0%
+  coordinate_valid                    100.0%
+  open_date                             0.0%
+  open_year                             0.0%
+  uid                                  67.7%
+  admin4                                0.0%
+  zone                                  0.0%
+  coordinate_source                     0.0%
+  ownership_detail                      0.0%
+  status                                0.0%
+  catchment_population                  0.0%
+  urban_rural_strata                    0.0%
+  inpatient                             0.0%
+  outpatient                            0.0%
+  maternity                             0.0%
+  emergency                             0.0%
+  laboratory                            0.0%
+  malaria_services                      0.0%
+  extraction_date                       0.0%
+  data_quality_flag                   100.0%
+
+Data quality flag distribution:
+
+ high   low 
+50975    47 

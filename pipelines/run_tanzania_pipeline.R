@@ -1,0 +1,20 @@
+# =============================================================
+# run_tanzania_pipeline.R
+# AfyaScope ETL — Tanzania standalone pipeline
+#
+# Convenience script to run Tanzania alone (PoC entry point).
+# Usage: source("pipelines/run_tanzania_pipeline.R")
+# =============================================================
+
+library(yaml)
+source("pipelines/run_country_pipeline.R")
+
+countries_config <- read_yaml("config/countries.yml")
+schema           <- load_schema("config/schema.yml")
+
+run_country_pipeline(
+  country           = "tanzania",
+  countries_config  = countries_config,
+  schema            = schema,
+  validate_boundary = TRUE    # uses GADM via geodata; cached in data/cache/gadm/
+)

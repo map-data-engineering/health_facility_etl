@@ -1,0 +1,132 @@
+# =============================================================
+# Country Configuration and Column Mapping
+# AfyaScope ETL Pipeline — v2.0
+#
+# For each country, define:
+#   raw_file             : path to raw data file
+#   data_source          : human-readable source label
+#   Column mappings      : map raw col name → standard schema name
+#                          set to null if not available in source
+# =============================================================
+
+tanzania:
+  raw_file: data/raw/tanzania/hf_tanzania_2026.csv
+  data_source: "MoH Tanzania Health Facility Registry (HFR) 2026"
+  facility_name_column: name
+  facility_code_column: facility_code
+  admin1_column: region
+  admin2_column: district
+  admin3_column: ward
+  admin4_column: village
+  zone_column: zone
+  facility_type_column: facilitytypegroup
+  # broad ownership (Public/Private) — mapped from ownershipgroup
+  facility_ownership_column: ownershipgroup
+  # detailed ownership (LGA, FBO, For Profit, etc)
+  ownership_detail_column: ownership
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: operatingstatus
+  open_date_column: date
+  catchment_population_column: population
+  urban_rural_strata_column: strata
+
+malawi:
+  raw_file: data/raw/malawi/MHFR_Facilities.xlsx
+  data_source: "Malawi Health Facility Registry (MHFR)"
+  facility_name_column: "COMMON NAME"
+  facility_code_column: CODE
+  admin1_column: ZONE
+  admin2_column: null
+  admin3_column: null
+  admin4_column: null
+  zone_column: null
+  facility_type_column: TYPE
+  facility_ownership_column: OWNERSHIP
+  ownership_detail_column: null
+  latitude_column: LATITUDE
+  longitude_column: LONGITUDE
+  operation_status_column: STATUS
+  open_date_column: null
+  catchment_population_column: null
+  urban_rural_strata_column: null
+
+uganda:
+  raw_file: data/raw/uganda/hf_data_extracted.csv
+  data_source: "Uganda Ministry of Health Master Facility List (MFL)"
+  facility_name_column: short_name
+  facility_code_column: mfl_uid
+  admin1_column: region
+  admin2_column: district
+  admin3_column: subcounty
+  admin4_column: village
+  zone_column: null
+  facility_type_column: level
+  facility_ownership_column: ownership
+  ownership_detail_column: authority
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: status
+  open_date_column: opening_date
+  catchment_population_column: null
+  urban_rural_strata_column: null
+
+zambia:
+  raw_file: data/raw/zambia/mfl_facilities_export20260208091829.xlsx
+  data_source: "Zambia Ministry of Health Master Facility List (MFL)"
+  facility_name_column: Name
+  facility_code_column: MFL_Code
+  admin1_column: Province
+  admin2_column: District
+  admin3_column: Ward
+  admin4_column: null
+  zone_column: Zone
+  facility_type_column: Type
+  facility_ownership_column: Ownership
+  ownership_detail_column: "Ownership type"
+  latitude_column: Latitude
+  longitude_column: Longitude
+  operation_status_column: Operational_status
+  open_date_column: null
+  catchment_population_column: "Catchment population head count"
+  urban_rural_strata_column: null
+
+nigeria:
+  raw_file: "data/raw/nigeria/GRID3_NGA_health_facilities_v2_0_5806009649412052847 (1).csv"
+  data_source: "GRID3 Nigeria Health Facilities v2.0 (derived from NHFR)"
+  facility_name_column: facility_name
+  facility_code_column: nhfr_facility_code
+  admin1_column: state
+  admin2_column: lga
+  admin3_column: ward
+  admin4_column: null
+  zone_column: null
+  facility_type_column: facility_level
+  facility_ownership_column: ownership
+  ownership_detail_column: null
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: null
+  open_date_column: null
+  catchment_population_column: null
+  urban_rural_strata_column: null
+
+botswana:
+  raw_file: data/raw/botswana/Facilities_List_Nov2026.csv
+  data_source: "Botswana Ministry of Health Facilities List 2026"
+  facility_name_column: "Facility Name"
+  facility_code_column: "New Facility Code"
+  admin1_column: District
+  admin2_column: null
+  admin3_column: null
+  admin4_column: null
+  zone_column: null
+  facility_type_column: "Service Delivery Type"
+  facility_ownership_column: "Facility Owner"
+  ownership_detail_column: null
+  latitude_column: Latitude
+  longitude_column: Longitude
+  operation_status_column: "Facility Status"
+  open_date_column: null
+  catchment_population_column: null
+  urban_rural_strata_column: null

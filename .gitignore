@@ -1,0 +1,22 @@
+# R session artefacts
+.Rhistory
+.Rdata
+.Rproj.user/
+*.Rproj
+
+# Raw source data (large, proprietary — supply separately)
+data/raw/
+
+# GADM and geocode caches (re-downloadable)
+data/cache/
+
+# Binary / large generated outputs
+data/processed/global_master/*.parquet
+data/processed/global_master/*.duckdb
+
+# Logs (append-only, noisy in diffs)
+logs/
+
+# OS noise
+.DS_Store
+Thumbs.db

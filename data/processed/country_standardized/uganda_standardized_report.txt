@@ -1,0 +1,58 @@
+AfyaScope — Standardized Data Report
+Country      : Uganda
+Generated    : 2026-05-15 16:57:50.087599
+Rows         : 8508
+Columns      : 46
+
+Column completeness (% non-null):
+  identifier                           96.8%
+  name                                100.0%
+  facility_code                       100.0%
+  facility_name                       100.0%
+  historical_id                       100.0%
+  admin1                              100.0%
+  admin2                              100.0%
+  admin3                               90.1%
+  parish                                0.0%
+  admin4                                0.0%
+  facility_type                       100.0%
+  ownership_detail                    100.0%
+  status                              100.0%
+  reporting                           100.0%
+  licensed                            100.0%
+  address                               0.0%
+  contact_personemail                   0.0%
+  contact_personmobile                  0.0%
+  contact_personname                    0.0%
+  contact_persontitle                   0.0%
+  longitude                            71.0%
+  latitude                             71.0%
+  closing_date                          0.0%
+  bed_capacity                          0.0%
+  services                              0.0%
+  createdAt                           100.0%
+  updatedAt                           100.0%
+  ownership                           100.0%
+  country                             100.0%
+  data_source                         100.0%
+  coordinate_valid                     71.0%
+  open_date                             0.0%
+  open_year                             0.0%
+  uid                                 100.0%
+  zone                                  0.0%
+  coordinate_source                     0.0%
+  catchment_population                  0.0%
+  urban_rural_strata                    0.0%
+  inpatient                             0.0%
+  outpatient                            0.0%
+  maternity                             0.0%
+  emergency                             0.0%
+  laboratory                            0.0%
+  malaria_services                      0.0%
+  extraction_date                       0.0%
+  data_quality_flag                   100.0%
+
+Data quality flag distribution:
+
+high  low 
+6041 2467 

@@ -1,0 +1,9 @@
+raw_data: data/raw
+interim_data: data/interim
+processed_data: data/processed
+
+country_standardized: data/processed/country_standardized
+global_master: data/processed/global_master
+
+logs: logs
+outputs: outputs
