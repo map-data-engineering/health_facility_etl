@@ -1,0 +1,23 @@
+AfyaScope — Tanzania Services Standardisation Report
+Generated: 2026-05-20 13:56:33.431592
+Pipeline version: 2.0
+
+--- Row counts ---
+Total service records  : 208941
+Unique facility_codes  : 11904
+Matched facility_uid   : 208941 (100.0%)
+Unmatched facility_uid : 0
+include_in_analysis TRUE : 191656
+needs_review TRUE        : 2
+
+--- Domain distribution ---
+  HIV/AIDS Services                   60165 (28.8%)
+  Clinical Services                   41740 (20.0%)
+  Diagnostic Services                 35589 (17.0%)
+  Community & Preventive Health       27441 (13.1%)
+  Malaria Services                    26022 (12.5%)
+  Support Services                    17966 (8.6%)
+  Reproductive & Maternal Health      18 (0.0%)
+
+--- Unmatched crosswalk rows ---
+  None

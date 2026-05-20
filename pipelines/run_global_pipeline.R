@@ -7,10 +7,20 @@
 # Step 3 — Data lake export (Phase 2):
 #             Parquet  : facilities_YYYY-MM.parquet
 #             DuckDB   : afyascope.duckdb  table=health_facilities
+# Step 4 — Services pipeline (optional, skip with run_services=FALSE):
+#             Runs R/standardise/standardise_{country}_services.R for any
+#             country in run_list that has a matching script.
+#             DuckDB   : afyascope.duckdb  table=facility_services (overwrite)
+#             To add a new country: create
+#               R/standardise/standardise_{country}_services.R
+#               crosswalks/{country}_services_crosswalk.csv
 #
 # Usage (from project root):
 #   source("pipelines/run_global_pipeline.R")
 #   run_global_pipeline()
+#
+# Facilities only (skip services):
+#   run_global_pipeline(run_services = FALSE)
 #
 # Merge only (skip country pipelines):
 #   run_global_pipeline(run_countries = FALSE)
@@ -32,7 +42,8 @@ run_global_pipeline <- function(
     countries         = NULL,   # NULL = all countries in config
     run_countries     = TRUE,   # FALSE = skip to merge step
     validate_boundary = TRUE,   # uses GADM (cached); set FALSE to skip
-    export_data_lake  = TRUE    # FALSE = skip Parquet + DuckDB export
+    export_data_lake  = TRUE,   # FALSE = skip Parquet + DuckDB export
+    run_services      = TRUE    # FALSE = skip service standardisation + DuckDB load
 ) {
 
   cat("\n╔══════════════════════════════════════╗\n")
@@ -89,10 +100,12 @@ run_global_pipeline <- function(
 
   if (!dir.exists(output_folder)) dir.create(output_folder, recursive = TRUE)
 
-  csv_files <- list.files(input_folder,
-                          pattern     = "_standardized\\.csv$",
-                          full.names  = TRUE,
-                          recursive   = FALSE)
+  # Exclude services files (_services_standardized.csv) — those go to
+  # facility_services DuckDB table in Step 4, not into health_facilities
+  all_csvs  <- list.files(input_folder, pattern = "_standardized\\.csv$",
+                          full.names = TRUE, recursive = FALSE)
+  csv_files <- all_csvs[!grepl("_services_standardized\\.csv$",
+                                basename(all_csvs))]
 
   if (length(csv_files) == 0)
     stop("No standardized country CSVs found in ", input_folder)
@@ -203,9 +216,80 @@ run_global_pipeline <- function(
     cat("\nStep 3/3 — Skipping data lake export\n")
   }
 
+  # ── Step 4: Services pipeline ─────────────────────────────────────────────
+  svc_result <- NULL
+  if (run_services) {
+    cat("\nStep 4 — Services standardisation + DuckDB load\n")
+    log_message("GLOBAL", "services", "START")
+
+    svc_cols <- c("uid","facility_uid","country_iso","country_name",
+                  "service_domain","service_group","service_name",
+                  "source_service_id","source_type_id","source_category_id",
+                  "source_service_name","is_clinical","is_malaria_related",
+                  "include_in_analysis","extracted_date","source_url",
+                  "pipeline_version","facility_code","needs_review")
+
+    svc_dfs <- list()
+    for (country in run_list) {
+      svc_script <- file.path("R", "standardise",
+                              sprintf("standardise_%s_services.R", country))
+      if (!file.exists(svc_script)) {
+        cat(sprintf("  [services] %s — no script found, skipping\n", country))
+        next
+      }
+      source(svc_script)
+      fn_name <- sprintf("standardise_%s_services", country)
+      df <- tryCatch(
+        do.call(fn_name, list()),
+        error = function(e) {
+          log_message("GLOBAL", paste("services", country), "FAILED", e$message)
+          cat(sprintf("  [services] %s FAILED: %s\n", country, e$message))
+          NULL
+        }
+      )
+      if (!is.null(df)) {
+        svc_dfs[[country]] <- df
+        cat(sprintf("  [services] %s: %d rows\n", country, nrow(df)))
+      }
+    }
+
+    if (length(svc_dfs) > 0) {
+      if (!requireNamespace("duckdb", quietly = TRUE) ||
+          !requireNamespace("DBI",    quietly = TRUE)) {
+        message("  [services] duckdb/DBI not installed — skipping DuckDB load")
+      } else {
+        combined_svc <- dplyr::bind_rows(lapply(svc_dfs, function(df) {
+          df_sel <- df[, intersect(svc_cols, names(df)), drop = FALSE]
+          dplyr::mutate(df_sel,
+            dplyr::across(c(source_service_id, source_type_id, source_category_id),
+                          as.character))
+        }))
+
+        duckdb_path <- file.path(output_folder, "afyascope.duckdb")
+        con_svc <- DBI::dbConnect(duckdb::duckdb(), duckdb_path, read_only = FALSE)
+        on.exit(DBI::dbDisconnect(con_svc, shutdown = TRUE), add = TRUE)
+        DBI::dbWriteTable(con_svc, "facility_services", combined_svc, overwrite = TRUE)
+        n_svc <- DBI::dbGetQuery(con_svc,
+                                 "SELECT COUNT(*) AS n FROM facility_services")$n
+
+        cat(sprintf("  ✓ facility_services: %d rows in DuckDB\n", n_svc))
+        log_message("GLOBAL", "services", "SUCCESS",
+                    paste("facility_services rows:", n_svc,
+                          "| countries:", paste(names(svc_dfs), collapse = ", ")))
+        svc_result <- list(n_rows = n_svc, countries = names(svc_dfs))
+      }
+    } else {
+      cat("  [services] No service scripts found for any country in run_list\n")
+      log_message("GLOBAL", "services", "SKIPPED", "no service scripts found")
+    }
+  } else {
+    cat("\nStep 4 — Skipping services pipeline\n")
+  }
+
   cat("\n╔══════════════════════════════════════╗\n")
   cat("║   Global pipeline complete ✓         ║\n")
   cat("╚══════════════════════════════════════╝\n\n")
 
-  return(invisible(list(data = global_df, lake = lake_result)))
+  return(invisible(list(data = global_df, lake = lake_result,
+                        services = svc_result)))
 }

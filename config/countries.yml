@@ -1,6 +1,6 @@
 # =============================================================
 # Country Configuration and Column Mapping
-# AfyaScope ETL Pipeline — v2.0
+# HealthScope ETL Pipeline — v2.0
 #
 # For each country, define:
 #   raw_file             : path to raw data file
@@ -29,24 +29,24 @@ tanzania:
   operation_status_column: operatingstatus
   open_date_column: date
   catchment_population_column: population
-  urban_rural_strata_column: strata
+  #urban_rural_strata_column: strata
 
 malawi:
-  raw_file: data/raw/malawi/MHFR_Facilities.xlsx
+  raw_file: data/raw/malawi/healthfacility_malawi.csv
   data_source: "Malawi Health Facility Registry (MHFR)"
-  facility_name_column: "COMMON NAME"
-  facility_code_column: CODE
-  admin1_column: ZONE
+  facility_name_column: "facility_name"
+  facility_code_column: facility_code
+  admin1_column: admin1
   admin2_column: null
   admin3_column: null
   admin4_column: null
   zone_column: null
-  facility_type_column: TYPE
-  facility_ownership_column: OWNERSHIP
+  facility_type_column: facility_type
+  facility_ownership_column: facility_ownership
   ownership_detail_column: null
-  latitude_column: LATITUDE
-  longitude_column: LONGITUDE
-  operation_status_column: STATUS
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: status
   open_date_column: null
   catchment_population_column: null
   urban_rural_strata_column: null

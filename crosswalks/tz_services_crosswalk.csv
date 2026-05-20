@@ -1,0 +1,174 @@
+"source_category","source_group","source_detail","service_domain","service_group","service_name","is_clinical","is_malaria_related","include_in_analysis","needs_review"
+"diagnostic_services","Diagnostic Services","Laboratory","Diagnostic Services","Diagnostic Services","Laboratory",TRUE,FALSE,TRUE,FALSE
+"diagnostic_services","Diagnostic Services","Radiology Services","Diagnostic Services","Diagnostic Services","Radiology Services",TRUE,FALSE,TRUE,FALSE
+"diagnostic_services","Diagnostic Services","Xpert-MTB/RIF","Diagnostic Services","Diagnostic Services","Xpert-MTB/RIF",TRUE,FALSE,TRUE,FALSE
+"diagnostic_services","Diagnostic Services",NA,"Diagnostic Services","Diagnostic Services",NA,TRUE,FALSE,NA,FALSE
+"emergency","Emergency Preparedness","Basic Emergency Preparedness","Clinical Services","Emergency Services","Basic Emergency Preparedness",TRUE,FALSE,TRUE,FALSE
+"emergency","Emergency Preparedness","Comprehensive Emergency Preparedness","Clinical Services","Emergency Services","Comprehensive Emergency Preparedness",TRUE,FALSE,TRUE,FALSE
+"emergency","Emergency Preparedness","Emergency Care and Trauma","Clinical Services","Emergency Services","Emergency Care and Trauma",TRUE,FALSE,TRUE,FALSE
+"ent_services","ENT Services","Audiology and Hearing","Clinical Services","ENT Services","Audiology and Hearing",TRUE,FALSE,TRUE,FALSE
+"ent_services","ENT Services","ENT Services","Clinical Services","ENT Services","ENT Services",TRUE,FALSE,TRUE,FALSE
+"ent_services","ENT Services","General ENT","Clinical Services","ENT Services","General ENT",TRUE,FALSE,TRUE,FALSE
+"ent_services","ENT Services","Head and Neck Surgery","Clinical Services","ENT Services","Head and Neck Surgery",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Diabetes Care and Treatment","Clinical Services","General Clinical Services","Diabetes Care and Treatment",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","General Ophthalmology","Clinical Services","General Clinical Services","General Ophthalmology",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","IMCI - Integrated Management of","Clinical Services","General Clinical Services","IMCI - Integrated Management of",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","IPD - Inpatient Services","Clinical Services","General Clinical Services","IPD - Inpatient Services",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Major Surgical Interventions","Clinical Services","General Clinical Services","Major Surgical Interventions",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Mental Health Services","Clinical Services","General Clinical Services","Mental Health Services",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Minor Surgical Interventions","Clinical Services","General Clinical Services","Minor Surgical Interventions",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","NCD - Other Non-Communicable Disease","Clinical Services","General Clinical Services","NCD - Other Non-Communicable Disease",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Nutritional Counseling","Clinical Services","General Clinical Services","Nutritional Counseling",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Nutritional Rehabilitation","Clinical Services","General Clinical Services","Nutritional Rehabilitation",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","OPD - Outpatient Services","Clinical Services","General Clinical Services","OPD - Outpatient Services",TRUE,FALSE,TRUE,FALSE
+"general_services","General Clinical Services","Physiotherapy","Clinical Services","General Clinical Services","Physiotherapy",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Adolescent Reproductive Health Services","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Adolescent Reproductive Health Services",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Antenatal Care","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Antenatal Care",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Breast Cancer","Clinical Services","General Clinical Services","Breast Cancer",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","CEmOC - Comprehensive Emergency","Reproductive & Maternal Health","Reproductive & Maternal Health Services","CEmOC - Comprehensive Emergency",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Cervical Cancer","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Cervical Cancer",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Councelling","Community & Preventive Health","Growth Monitoring & Nutrition","Councelling",TRUE,FALSE,TRUE,TRUE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Emergency Contraception","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Emergency Contraception",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","FP-INV – Invasive Method","Reproductive & Maternal Health","Reproductive & Maternal Health Services","FP-INV – Invasive Method",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","FP-NONINV - Noninvasive Method","Reproductive & Maternal Health","Reproductive & Maternal Health Services","FP-NONINV - Noninvasive Method",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Family Planning","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Family Planning",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","GBV PEP","Reproductive & Maternal Health","Reproductive & Maternal Health Services","GBV PEP",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","GBV Trauma Counseling","Reproductive & Maternal Health","Reproductive & Maternal Health Services","GBV Trauma Counseling",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","IMM-ADD - With Addition Vaccine","Community & Preventive Health","Growth Monitoring & Nutrition","IMM-ADD - With Addition Vaccine",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","IMM-BASIC - Basic Immunization","Community & Preventive Health","Growth Monitoring & Nutrition","IMM-BASIC - Basic Immunization",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Management of Hypertensive Pregnancies","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Management of Hypertensive Pregnancies",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Maternal and Newborn Care","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Maternal and Newborn Care",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","PORT - Port Immunization Services","Community & Preventive Health","Growth Monitoring & Nutrition","PORT - Port Immunization Services",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Post-Abortion Care","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Post-Abortion Care",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Postnatal Care","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Postnatal Care",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Prostate Cancer","Clinical Services","General Clinical Services","Prostate Cancer",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Reproductive Cancer Screening and","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Reproductive Cancer Screening and",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Time sexual intercourse","Reproductive & Maternal Health","Reproductive & Maternal Health Services","Time sexual intercourse",TRUE,FALSE,TRUE,TRUE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","VAC PEP","Reproductive & Maternal Health","Reproductive & Maternal Health Services","VAC PEP",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","VAC Trauma Counseling","Reproductive & Maternal Health","Reproductive & Maternal Health Services","VAC Trauma Counseling",TRUE,FALSE,TRUE,FALSE
+"growth_nutrition","Growth Monitoring / Nutrition Surveillance","Vaccination","Community & Preventive Health","Growth Monitoring & Nutrition","Vaccination",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","Community Mobilization","Community & Preventive Health","Health Promotion and Disease Prevention","Community Mobilization",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","Epidemiological Surveillance and Response","Community & Preventive Health","Health Promotion and Disease Prevention","Epidemiological Surveillance and Response",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","Epidemiological Surveillance and Response Response","Community & Preventive Health","Health Promotion and Disease Prevention","Epidemiological Surveillance and Response Response",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","Health promoting hospital initiative","Community & Preventive Health","Health Promotion and Disease Prevention","Health promoting hospital initiative",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","Psychosocial Support","Community & Preventive Health","Health Promotion and Disease Prevention","Psychosocial Support",TRUE,FALSE,TRUE,FALSE
+"health_promotion","Health Promotion and Disease Prevention","School Health Intervention","Community & Preventive Health","Health Promotion and Disease Prevention","School Health Intervention",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment","Adult ART - Adult ART Only","HIV/AIDS Services","HIV/AIDS Care and Treatment","Adult ART - Adult ART Only",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment","Both Adult and Pediatric","HIV/AIDS Services","HIV/AIDS Care and Treatment","Both Adult and Pediatric",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment","HBC - Home and Community Based Care","HIV/AIDS Services","HIV/AIDS Care and Treatment","HBC - Home and Community Based Care",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment","HIV/AIDS Care and Treatment","HIV/AIDS Services","HIV/AIDS Care and Treatment","HIV/AIDS Care and Treatment",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment","Ped ART - Pediatric ART Only","HIV/AIDS Services","HIV/AIDS Care and Treatment","Ped ART - Pediatric ART Only",TRUE,FALSE,TRUE,FALSE
+"hiv_caretreatment","HIV/AIDS Care and Treatment",NA,"HIV/AIDS Services","HIV/AIDS Care and Treatment",NA,TRUE,FALSE,NA,FALSE
+"hiv_prevention","HIV/AIDS Prevention","DCT - Diagnostic Counseling and Testing","HIV/AIDS Services","HIV/AIDS Prevention","DCT - Diagnostic Counseling and Testing",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","EID - Early Infant Diagnosis","HIV/AIDS Services","HIV/AIDS Prevention","EID - Early Infant Diagnosis",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","EIMC - Early Infant Male Circumcision","HIV/AIDS Services","HIV/AIDS Prevention","EIMC - Early Infant Male Circumcision",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","PEP - Post Exposure Prophylaxis","HIV/AIDS Services","HIV/AIDS Prevention","PEP - Post Exposure Prophylaxis",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","PITC - Provider Initiated Testing And","HIV/AIDS Services","HIV/AIDS Prevention","PITC - Provider Initiated Testing And",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","PMTCT - ANC (ANC PMTCT)","HIV/AIDS Services","HIV/AIDS Prevention","PMTCT - ANC (ANC PMTCT)",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","PMTCT - Maternity (MAT PMTCT)","HIV/AIDS Services","HIV/AIDS Prevention","PMTCT - Maternity (MAT PMTCT)",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","PREP – Pre Exposure Prophylaxis","HIV/AIDS Services","HIV/AIDS Prevention","PREP – Pre Exposure Prophylaxis",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","STI - Management of Sexually Transmitted","HIV/AIDS Services","HIV/AIDS Prevention","STI - Management of Sexually Transmitted",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","VCT - Voluntary Counseling and Testing","HIV/AIDS Services","HIV/AIDS Prevention","VCT - Voluntary Counseling and Testing",TRUE,FALSE,TRUE,FALSE
+"hiv_prevention","HIV/AIDS Prevention","VMMC - Voluntary Medical Male","HIV/AIDS Services","HIV/AIDS Prevention","VMMC - Voluntary Medical Male",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Amylase","Diagnostic Services","Laboratory - Clinical Chemistry","Amylase",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Antibody identification methods","Diagnostic Services","Laboratory - Clinical Chemistry","Antibody identification methods",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Blood Sugar/ Glucose Test (POCT)","Diagnostic Services","Laboratory - Clinical Chemistry","Blood Sugar/ Glucose Test (POCT)",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Blood gas analysis","Diagnostic Services","Laboratory - Clinical Chemistry","Blood gas analysis",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","CRP (POCT)","Diagnostic Services","Laboratory - Clinical Chemistry","CRP (POCT)",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Cardiac Profile Tests","Diagnostic Services","Laboratory - Clinical Chemistry","Cardiac Profile Tests",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Electrolytes","Diagnostic Services","Laboratory - Clinical Chemistry","Electrolytes",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Enzyme commercial kits","Diagnostic Services","Laboratory - Clinical Chemistry","Enzyme commercial kits",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Glycosylated Haemoglobin","Diagnostic Services","Laboratory - Clinical Chemistry","Glycosylated Haemoglobin",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Lipid Profile Test","Diagnostic Services","Laboratory - Clinical Chemistry","Lipid Profile Test",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Liver Function Tests","Diagnostic Services","Laboratory - Clinical Chemistry","Liver Function Tests",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Protein (Commercial kits)","Diagnostic Services","Laboratory - Clinical Chemistry","Protein (Commercial kits)",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Protein (Electrophoresis)","Diagnostic Services","Laboratory - Clinical Chemistry","Protein (Electrophoresis)",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Renal Function Test","Diagnostic Services","Laboratory - Clinical Chemistry","Renal Function Test",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Renal Function Tests","Diagnostic Services","Laboratory - Clinical Chemistry","Renal Function Tests",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","UPT","Diagnostic Services","Laboratory - Clinical Chemistry","UPT",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Uric acids","Diagnostic Services","Laboratory - Clinical Chemistry","Uric acids",TRUE,FALSE,TRUE,FALSE
+"lab_clinicalchemistry","Laboratory Service-Clinical Chemistry","Urine Chemistry","Diagnostic Services","Laboratory - Clinical Chemistry","Urine Chemistry",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Blood Smear for Haemoparasites","Diagnostic Services","Laboratory - Parasitology","Blood Smear for Haemoparasites",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Blood film for haemoparasites","Diagnostic Services","Laboratory - Parasitology","Blood film for haemoparasites",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Formal ether concentration technique","Diagnostic Services","Laboratory - Parasitology","Formal ether concentration technique",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Kato-Katz Technique","Diagnostic Services","Laboratory - Parasitology","Kato-Katz Technique",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Malaria Rapid Diagnostic Test (mRDT)","Diagnostic Services","Laboratory - Parasitology","Malaria Rapid Diagnostic Test (mRDT)",TRUE,TRUE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Occult Blood","Diagnostic Services","Laboratory - Parasitology","Occult Blood",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","PCR","Diagnostic Services","Laboratory - Parasitology","PCR",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Serological test","Diagnostic Services","Laboratory - Parasitology","Serological test",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Skin Sip for Onchocerciasis","Diagnostic Services","Laboratory - Parasitology","Skin Sip for Onchocerciasis",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Stool Analysis","Diagnostic Services","Laboratory - Parasitology","Stool Analysis",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Stool Sedimentation(Cells,Ova,Cyst and","Diagnostic Services","Laboratory - Parasitology","Stool Sedimentation(Cells,Ova,Cyst and",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Stool concentration (formal ether)","Diagnostic Services","Laboratory - Parasitology","Stool concentration (formal ether)",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Urine Analysis","Diagnostic Services","Laboratory - Parasitology","Urine Analysis",TRUE,FALSE,TRUE,FALSE
+"lab_parasitology","Laboratory Service-Parasitology","Urine sedimentation","Diagnostic Services","Laboratory - Parasitology","Urine sedimentation",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Ant Streptolysin O Titre (ASOT)","Diagnostic Services","Laboratory - Serology","Ant Streptolysin O Titre (ASOT)",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Brucella Weil’s test","Diagnostic Services","Laboratory - Serology","Brucella Weil’s test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Chlamydia","Diagnostic Services","Laboratory - Serology","Chlamydia",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Cryptococcal Antigen Test","Diagnostic Services","Laboratory - Serology","Cryptococcal Antigen Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","DBS for HEID","Diagnostic Services","Laboratory - Serology","DBS for HEID",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Dengue Haemorrhagic fever","Diagnostic Services","Laboratory - Serology","Dengue Haemorrhagic fever",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","HIV Rapid Test","Diagnostic Services","Laboratory - Serology","HIV Rapid Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","HIV Viral Load","Diagnostic Services","Laboratory - Serology","HIV Viral Load",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Helicobacter pylori","Diagnostic Services","Laboratory - Serology","Helicobacter pylori",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Hepatitis B Surface Antigen Rapid Test","Diagnostic Services","Laboratory - Serology","Hepatitis B Surface Antigen Rapid Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Hepatitis B and C Screening","Diagnostic Services","Laboratory - Serology","Hepatitis B and C Screening",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Hepatitis C Surface Antigen Rapid Test","Diagnostic Services","Laboratory - Serology","Hepatitis C Surface Antigen Rapid Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Hormonal Tests","Diagnostic Services","Laboratory - Serology","Hormonal Tests",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Human Papiloma Virus","Diagnostic Services","Laboratory - Serology","Human Papiloma Virus",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Human papilloma virus","Diagnostic Services","Laboratory - Serology","Human papilloma virus",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Prostate Specific Antigen (PSA)","Diagnostic Services","Laboratory - Serology","Prostate Specific Antigen (PSA)",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","RPR/ VDRL Rapid Test","Diagnostic Services","Laboratory - Serology","RPR/ VDRL Rapid Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Rapid Tests","Diagnostic Services","Laboratory - Serology","Rapid Tests",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Rheumatoid Test","Diagnostic Services","Laboratory - Serology","Rheumatoid Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Sickle Cell Screening Test","Diagnostic Services","Laboratory - Serology","Sickle Cell Screening Test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Syphilis (TPHA/TPPA) test","Diagnostic Services","Laboratory - Serology","Syphilis (TPHA/TPPA) test",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Syphillis antibody (Commercial kits)","Diagnostic Services","Laboratory - Serology","Syphillis antibody (Commercial kits)",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Tumor Markers","Diagnostic Services","Laboratory - Serology","Tumor Markers",TRUE,FALSE,TRUE,FALSE
+"lab_serology","Laboratory Service-Serology","Widal test","Diagnostic Services","Laboratory - Serology","Widal test",TRUE,FALSE,TRUE,FALSE
+"malaria_diagnosis","Malaria Diagnosis and Treatment","First Line Treatment","Malaria Services","Malaria Diagnosis and Treatment","First Line Treatment",TRUE,TRUE,TRUE,FALSE
+"malaria_diagnosis","Malaria Diagnosis and Treatment","Slide Microscopy","Malaria Services","Malaria Diagnosis and Treatment","Slide Microscopy",TRUE,TRUE,TRUE,FALSE
+"malaria_diagnosis","Malaria Diagnosis and Treatment","Treatment of Complicated Malaria","Malaria Services","Malaria Diagnosis and Treatment","Treatment of Complicated Malaria",TRUE,TRUE,TRUE,FALSE
+"malaria_diagnosis","Malaria Diagnosis and Treatment","mRDT - Rapid Diagnostic Tests","Malaria Services","Malaria Diagnosis and Treatment","mRDT - Rapid Diagnostic Tests",TRUE,TRUE,TRUE,FALSE
+"radiology","Radiology Services","Bone Densitometry (DEXA)","Diagnostic Services","Radiology Services","Bone Densitometry (DEXA)",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","CT Scan","Diagnostic Services","Radiology Services","CT Scan",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Dental services","Diagnostic Services","Radiology Services","Dental services",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Fluoroscopy services","Diagnostic Services","Radiology Services","Fluoroscopy services",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","General radiography services","Diagnostic Services","Radiology Services","General radiography services",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Interventional radiology","Diagnostic Services","Radiology Services","Interventional radiology",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Magnetic Resonance Imaging (MRI)","Diagnostic Services","Radiology Services","Magnetic Resonance Imaging (MRI)",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Mammography","Diagnostic Services","Radiology Services","Mammography",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Nuclear Medicine Services","Diagnostic Services","Radiology Services","Nuclear Medicine Services",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Radiotherapy services","Diagnostic Services","Radiology Services","Radiotherapy services",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Theatre radiography","Diagnostic Services","Radiology Services","Theatre radiography",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","Ultrasound","Diagnostic Services","Radiology Services","Ultrasound",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services","X-Ray","Diagnostic Services","Radiology Services","X-Ray",TRUE,FALSE,TRUE,FALSE
+"radiology","Radiology Services",NA,"Diagnostic Services","Radiology Services",NA,TRUE,FALSE,NA,FALSE
+"support_services","Support Services","Ash Pit","Support Services","Support Services","Ash Pit",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Female Staff Toilets (2WCs)","Support Services","Support Services","Female Staff Toilets (2WCs)",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Incinerator","Support Services","Support Services","Incinerator",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Kitchen Services","Support Services","Support Services","Kitchen Services",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Laundry Services","Support Services","Support Services","Laundry Services",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Male Staff Toilets (2WCs)","Support Services","Support Services","Male Staff Toilets (2WCs)",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Mortuary Services","Support Services","Support Services","Mortuary Services",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Office for In-Charge Officer","Support Services","Support Services","Office for In-Charge Officer",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Outside pit Latrine","Support Services","Support Services","Outside pit Latrine",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Parking for cars, bicycles","Support Services","Support Services","Parking for cars, bicycles",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Placenta Pit","Support Services","Support Services","Placenta Pit",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Security Services","Support Services","Support Services","Security Services",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Store room","Support Services","Support Services","Store room",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Toilets for Male Patients","Support Services","Support Services","Toilets for Male Patients",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Toilets for Male Staff","Support Services","Support Services","Toilets for Male Staff",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Toilets for female patients","Support Services","Support Services","Toilets for female patients",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Toilets for female staff","Support Services","Support Services","Toilets for female staff",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Wash Slab","Support Services","Support Services","Wash Slab",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services","Waste Storage Bay","Support Services","Support Services","Waste Storage Bay",FALSE,FALSE,FALSE,FALSE
+"support_services","Support Services",NA,"Support Services","Support Services",NA,FALSE,FALSE,FALSE,FALSE
+"therapeutics","Therapeutics","Adult ART - Adult ART Only","Support Services","Therapeutics and Pharmacy","Adult ART - Adult ART Only",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","Both Adult and Pediatric","Support Services","Therapeutics and Pharmacy","Both Adult and Pediatric",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","Community Mobilization","Support Services","Therapeutics and Pharmacy","Community Mobilization",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","Dispensing Room","Support Services","Therapeutics and Pharmacy","Dispensing Room",FALSE,FALSE,FALSE,FALSE
+"therapeutics","Therapeutics","HBC - Home and Community Based Care","Support Services","Therapeutics and Pharmacy","HBC - Home and Community Based Care",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","HIV/AIDS Care and Treatment","Support Services","Therapeutics and Pharmacy","HIV/AIDS Care and Treatment",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","Health promoting hospital innitiative","Support Services","Therapeutics and Pharmacy","Health promoting hospital innitiative",TRUE,FALSE,TRUE,FALSE
+"therapeutics","Therapeutics","Pharmacy","Support Services","Therapeutics and Pharmacy","Pharmacy",FALSE,FALSE,FALSE,FALSE

@@ -1,0 +1,198 @@
+# =============================================================
+# Facility Services Schema
+# AfyaScope ETL Pipeline — v2.0
+#
+# Standard 3-level hierarchy:
+#   service_domain → service_group → service_name
+#
+# 7 permitted service_domain values:
+#   Clinical Services
+#   Reproductive & Maternal Health
+#   HIV/AIDS Services
+#   Malaria Services
+#   Diagnostic Services
+#   Community & Preventive Health
+#   Support Services
+# =============================================================
+
+service_domains:
+  - Clinical Services
+  - Reproductive & Maternal Health
+  - HIV/AIDS Services
+  - Malaria Services
+  - Diagnostic Services
+  - Community & Preventive Health
+  - Support Services
+
+standard_columns:
+
+  # -----------------------------------------------------------
+  # IDENTIFIERS
+  # -----------------------------------------------------------
+  uid:
+    type: string
+    description: >
+      Stable global service-record ID minted at standardisation time.
+      Format: {ISO3}-SVC-{6-digit zero-padded row number}
+      e.g. TZA-SVC-000001, MWI-SVC-000142
+    required: true
+    unique: true
+
+  facility_uid:
+    type: string
+    description: >
+      Global facility UID from the health_facilities table.
+      Joins to uid in health_facilities / uid_registry.csv.
+      Format mirrors facility UIDs: TZA-000001, MWI-000001.
+      NULL if the facility_code has no match in uid_registry.
+      NOTE: health_facilities uses column names 'country' (not
+      country_name) and 'iso' (not country_iso). The join between
+      facility_services and health_facilities should always go
+      through facility_uid = uid, never through country columns
+      directly, to avoid schema mismatches.
+    required: false
+
+  country_iso:
+    type: string
+    description: ISO 3166-1 alpha-3 country code (e.g. TZA, MWI)
+    required: true
+    allowed_values:
+      - TZA
+      - MWI
+      - UGA
+      - ZMB
+      - NGA
+      - BWA
+
+  country_name:
+    type: string
+    description: Full country name
+    required: true
+    allowed_values:
+      - Tanzania
+      - Malawi
+      - Uganda
+      - Zambia
+      - Nigeria
+      - Botswana
+
+  # -----------------------------------------------------------
+  # SERVICE HIERARCHY  (3-level standard)
+  # -----------------------------------------------------------
+  service_domain:
+    type: string
+    description: >
+      Top-level service domain (level 1).
+      One of the 7 standard domain values above.
+    required: true
+    allowed_values:
+      - Clinical Services
+      - Reproductive & Maternal Health
+      - HIV/AIDS Services
+      - Malaria Services
+      - Diagnostic Services
+      - Community & Preventive Health
+      - Support Services
+
+  service_group:
+    type: string
+    description: >
+      Mid-level grouping within a domain (level 2).
+      Display name used in dashboards and reports.
+      e.g. "General Clinical Services", "HIV/AIDS Prevention"
+    required: true
+
+  service_name:
+    type: string
+    description: >
+      Lowest-level service subcategory (level 3).
+      Primary field for analysis and filtering.
+      Sourced from service_detail (TZ) or service_name (Malawi).
+    required: true
+
+  # -----------------------------------------------------------
+  # SOURCE PROVENANCE
+  # -----------------------------------------------------------
+  source_service_id:
+    type: string
+    description: >
+      Original service identifier from the source system.
+      TZ: not present in source (left NULL).
+      Malawi: service_id from malawi_hf_services_all.csv.
+    required: false
+
+  source_type_id:
+    type: string
+    description: >
+      Original service type code from the source system.
+      TZ: not present (NULL).
+      Malawi: service_type_id (values 1–8).
+    required: false
+
+  source_category_id:
+    type: string
+    description: >
+      Original service category code from the source system.
+      TZ: service_category slug (e.g. "general_services").
+      Malawi: service_category_id (numeric; 0 = uncategorised).
+    required: false
+
+  source_service_name:
+    type: string
+    description: >
+      Verbatim service name as it appears in the raw source file.
+      TZ: service_detail value.
+      Malawi: service_name value.
+      Preserved for auditing and crosswalk updates.
+    required: true
+
+  # -----------------------------------------------------------
+  # ANALYSIS FLAGS
+  # -----------------------------------------------------------
+  is_clinical:
+    type: boolean
+    description: >
+      TRUE if this is a direct patient-care service.
+      FALSE for equipment, consumables, staff training records,
+      support infrastructure, and administrative items.
+    required: true
+
+  is_malaria_related:
+    type: boolean
+    description: >
+      TRUE if service_domain = "Malaria Services" OR if the
+      service_name directly involves malaria diagnosis or treatment.
+    required: true
+
+  include_in_analysis:
+    type: boolean
+    description: >
+      TRUE if this record should be included in standard
+      service-availability analyses and dashboard counts.
+      FALSE for consumables, equipment, stock-out records,
+      staff training entries, and items flagged needs_review = TRUE
+      in the crosswalk.
+    required: true
+
+  # -----------------------------------------------------------
+  # METADATA / PROVENANCE
+  # -----------------------------------------------------------
+  extracted_date:
+    type: date
+    description: Date the record was extracted from the source system
+    required: false
+
+  source_url:
+    type: string
+    description: >
+      URL or file path of the raw source file used for this record.
+      Populated from the countries config or hard-coded per country.
+    required: false
+
+  pipeline_version:
+    type: string
+    description: >
+      Version of the AfyaScope ETL pipeline that produced this record.
+      e.g. "2.0"
+    required: false
+    default: "2.0"
