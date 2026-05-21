@@ -1,24 +1,29 @@
-# AfyaScope — Health Facility ETL Pipeline
-
-> **v2.0** — Sub-Saharan Africa Malaria-Endemic Countries
-
-A standardized, reproducible ETL framework to collect, clean, harmonize,
-and merge health facility data extracted directly from Ministries of Health
-across Sub-Saharan Africa. The output powers the **AfyaScope** health
-facility intelligence portal.
+# HealthScape ETL Pipeline
+> Health facility intelligence for Sub-Saharan Africa — feeding the HealthScape portal
 
 ---
 
-## Countries Covered
+## Overview
 
-| Country   | Source                                    | Records  | Status   |
-|-----------|-------------------------------------------|----------|----------|
-| Tanzania  | MoH Tanzania Health Facility Registry    | ~13,075  | ✅ Active |
-| Uganda    | Uganda MoH Master Facility List (MFL)    | ~8,508   | ✅ Active |
-| Zambia    | Zambia MoH Master Facility List (MFL)    | ~3,731   | ✅ Active |
-| Malawi    | Malawi Health Facility Registry (MHFR)   | ~1,929   | ✅ Active |
-| Nigeria   | GRID3 / NHFR                             | ~51,022  | ✅ Active |
-| Botswana  | MoH Botswana Facilities List             | TBD      | 🔄 Pending raw file |
+The HealthScape ETL Pipeline is a standardised, reproducible R framework that extracts, transforms, and loads health facility data from multiple Sub-Saharan African countries into a unified data lake. It produces two linked datasets — facility demographics and facility services — stored in a DuckDB database and consumed by the HealthScape portal.
+
+**Current coverage:** Tanzania, Uganda, Zambia, Nigeria, Malawi
+**Data lake size:** ~78,000 facilities | ~308,000 service records
+
+---
+
+## What the pipeline produces
+
+```
+healthscape.duckdb
+├── health_facilities     — who each facility is
+│   78,265 rows             name, location, type, ownership, admin hierarchy
+│
+└── facility_services     — what each facility offers
+    307,954 rows            standardised service names across all countries
+```
+
+These two tables are joined via `uid ↔ facility_uid` and queried directly by HealthScape.
 
 ---
 
@@ -26,197 +31,277 @@ facility intelligence portal.
 
 ```
 health_facility_etl/
+│
 ├── config/
-│   ├── countries.yml          # Country configs & column mappings
-│   ├── schema.yml             # Master standardized schema (v2)
-│   └── paths.yml              # Directory paths
+│   ├── countries.yml             — column mappings per country
+│   ├── schema.yml                — master facility schema (30 fields)
+│   └── services_schema.yaml      — master services schema (19 fields)
+│
+├── crosswalks/
+│   ├── tz_services_crosswalk.csv      — Tanzania service name → standard
+│   ├── malawi_services_crosswalk.csv  — Malawi service name → standard
+│   └── global_services_crosswalk.csv  — master crosswalk (all countries)
 │
 ├── data/
-│   ├── raw/                   # Original source files (one folder per country)
+│   ├── raw/
+│   │   ├── tanzania/             — raw source files per country
+│   │   ├── malawi/
+│   │   ├── nigeria/
+│   │   ├── uganda/
+│   │   └── zambia/
+│   │
 │   └── processed/
-│       ├── country_standardized/   # Per-country clean CSVs + QA reports
-│       └── global_master/          # Merged global dataset
+│       ├── country_standardized/ — per-country standardised CSVs
+│       │   ├── tanzania_standardized.csv
+│       │   ├── tanzania_services_standardized.csv
+│       │   └── ...
+│       │
+│       ├── global_master/
+│       │   ├── global_health_facilities.csv   — merged facility demographics
+│       │   ├── facilities_YYYY-MM.parquet     — parquet snapshot
+│       │   └── healthscape.duckdb               — THE DATA LAKE
+│       │
+│       └── uid_registry.csv      — global unique ID registry
 │
 ├── pipelines/
-│   ├── run_country_pipeline.R      # Core orchestrator (all steps)
-│   ├── run_global_pipeline.R       # Runs all countries → merge
-│   ├── run_tanzania_pipeline.R     # Convenience: Tanzania only
-│   ├── run_uganda_pipeline.R
-│   ├── run_zambia_pipeline.R
-│   ├── run_malawi_pipeline.R
-│   └── run_nigeria_pipeline.R
+│   ├── run_global_pipeline.R     — MASTER ORCHESTRATOR (run this)
+│   ├── run_country_pipeline.R    — generic country engine
+│   ├── run_tanzania_pipeline.R   — Tanzania only
+│   ├── run_malawi_pipeline.R     — Malawi only
+│   ├── run_nigeria_pipeline.R    — Nigeria only
+│   ├── run_uganda_pipeline.R     — Uganda only
+│   └── run_zambia_pipeline.R     — Zambia only
+│
+├── R/
+│   ├── standardise/
+│   │   └── standardise_services.R  — unified services standardisation
+│   └── ...
 │
 ├── scripts/
-│   ├── extraction/
-│   │   └── read_country_data.R     # CSV/XLSX reader with encoding handling
 │   ├── transformation/
-│   │   ├── standardize_columns.R   # Maps raw cols → schema; preserves all admin levels
-│   │   ├── clean_coordinates.R     # Coerces lat/lon; flags invalid/missing
-│   │   ├── validate_coordinates.R  # Within-country boundary check (requires sf)
-│   │   ├── clean_dates.R           # Parses open dates; nulls epoch-zero & implausible
-│   │   ├── enforce_schema_types.R  # Coerces all cols to schema types; adds missing as NA
-│   │   └── flag_data_quality.R     # Assigns high/medium/low/unknown per record
-│   └── loading/
-│       └── save_standardized_data.R  # Saves CSV + per-country QA report
+│   ├── loading/
+│   └── utils/
 │
 ├── logs/
-│   └── pipeline_log.csv        # Timestamped log of every pipeline step
+│   └── pipeline_log.csv
 │
 └── docs/
-    └── country_notes/          # Country-specific extraction notes
+    └── session_notes/            — development session summaries
 ```
 
 ---
 
-## ETL Pipeline Steps
+## ETL Workflow
+
+The pipeline runs in 4 steps, all orchestrated by `run_global_pipeline.R`:
 
 ```
-RAW FILE
-   │
-   ▼
-read_country_data()        — reads CSV/XLSX; handles latin1 encoding
-   │
-   ▼
-standardize_columns()      — maps raw col names → standard names
-                             preserves: admin1–4, zone, open_date_raw,
-                             ownership_detail, catchment_population,
-                             urban_rural_strata; normalises ownership
-                             to 4 categories (Public/Private/FBO/Other)
-   │
-   ▼
-clean_coordinates()        — coerces to numeric; flags missing/invalid/
-                             swapped lat-lon as coordinate_valid = FALSE
-   │
-   ▼
-validate_coordinates()     — (optional) within-country boundary check
-                             requires sf + rnaturalearth
-   │
-   ▼
-clean_dates()              — parses Stata %td, ISO 8601 formats;
-                             nulls epoch-zero 1970-01-01 sentinel values;
-                             produces open_date (Date) + open_year (int)
-   │
-   ▼
-enforce_schema_types()     — coerces all schema columns to correct types;
-                             adds missing schema cols as typed NA
-   │
-   ▼
-flag_data_quality()        — assigns high/medium/low/unknown per record
-                             based on coordinate validity + field completeness
-   │
-   ▼
-save_standardized_data()   — writes CSV + QA report to processed/
+Step 1 — Country facility pipelines
+          Raw CSV → standardised schema → per-country CSV
+          Generates UIDs, validates coordinates, flags quality
+
+Step 2 — Global merge
+          All country CSVs → global_health_facilities.csv
+          Schema enforced, missing columns filled as NA
+
+Step 3 — Data lake export
+          global_health_facilities.csv → healthscape.duckdb (health_facilities table)
+          Also writes a dated Parquet snapshot
+
+Step 4 — Services pipeline
+          Raw service files → crosswalk translation → standardised CSV
+          All countries merged → healthscape.duckdb (facility_services table)
 ```
 
----
+### Facility schema (Step 1-3)
 
-## Standardized Schema (v2) — Key Fields
+Each facility record contains 30 standardised fields including unique identifier (`uid`), facility name, type, ownership, operational status, administrative hierarchy (admin1–admin4), coordinates, coordinate validity flag, and data quality flag.
 
-| Field                  | Type    | Description                                      |
-|------------------------|---------|--------------------------------------------------|
-| `facility_code`        | string  | National facility ID                             |
-| `facility_name`        | string  | Official name                                    |
-| `country`              | string  | Country name (Title Case)                        |
-| `admin1`               | string  | Region / State / Province                        |
-| `admin2`               | string  | District / LGA                                   |
-| `admin3`               | string  | Ward / Sub-county                                |
-| `admin4`               | string  | Village / Parish                                 |
-| `zone`                 | string  | Zonal grouping (Tanzania, Zambia)                |
-| `latitude`             | float   | Decimal degrees                                  |
-| `longitude`            | float   | Decimal degrees                                  |
-| `coordinate_valid`     | boolean | Passes range + boundary check                    |
-| `facility_type`        | string  | Facility type from source                        |
-| `ownership`            | string  | Public / Private / Faith-Based NGO / Other       |
-| `ownership_detail`     | string  | Detailed ownership from source                   |
-| `status`               | string  | Operating status                                 |
-| `open_date`            | date    | Registration/opening date (NA if unknown)        |
-| `open_year`            | integer | Year opened (cleaned)                            |
-| `catchment_population` | integer | Estimated catchment population                   |
-| `urban_rural_strata`   | string  | Urban/rural classification                       |
-| `inpatient`            | boolean | Service available (to be joined from service data)|
-| `outpatient`           | boolean | Service available                                |
-| `maternity`            | boolean | Service available                                |
-| `emergency`            | boolean | Service available                                |
-| `laboratory`           | boolean | Service available                                |
-| `malaria_services`     | boolean | Service available                                |
-| `data_source`          | string  | Full source label                                |
-| `data_quality_flag`    | string  | high / medium / low / unknown                    |
+Field selection follows WHO guidance on Master Facility Lists (WHO, 2017).
+
+### Services schema (Step 4)
+
+Each service record contains 19 fields including a 3-level hierarchy:
+
+```
+service_domain   — 7 standard domains
+                   (Clinical Services, Malaria Services,
+                    HIV/AIDS Services, Diagnostic Services,
+                    Reproductive & Maternal Health,
+                    Community & Preventive Health,
+                    Support Services)
+
+service_group    — mid-level grouping (~25 groups)
+
+service_name     — lowest subcategory (primary analysis field)
+```
+
+Analysis flags — `is_clinical`, `is_malaria_related`, `include_in_analysis` — allow filtering out commodities, equipment, and training records from service availability analysis.
 
 ---
 
 ## How to Run
 
-### Tanzania only (PoC)
+**Always set working directory first:**
 ```r
-source("pipelines/run_tanzania_pipeline.R")
+setwd("path/to/health_facility_etl")
 ```
 
-### Any single country
-```r
-library(yaml)
-source("pipelines/run_country_pipeline.R")
-
-countries_config <- read_yaml("config/countries.yml")
-schema           <- load_schema("config/schema.yml")
-
-run_country_pipeline("uganda", countries_config, schema)
-```
-
-### Full global pipeline
+### Run everything (demographics + services, all countries)
 ```r
 source("pipelines/run_global_pipeline.R")
 run_global_pipeline()
 ```
 
-### Merge only (skip re-running country pipelines)
+### Run services pipeline only (skip re-running demographics)
 ```r
-run_global_pipeline(run_countries = FALSE)
+source("pipelines/run_global_pipeline.R")
+run_global_pipeline(
+  run_countries    = FALSE,
+  export_data_lake = FALSE,
+  run_services     = TRUE
+)
 ```
 
-### Specific subset of countries
+### Run a single country only
 ```r
-run_global_pipeline(countries = c("tanzania", "uganda", "zambia"))
+source("pipelines/run_tanzania_pipeline.R")
+```
+
+### Run specific countries in the global pipeline
+```r
+source("pipelines/run_global_pipeline.R")
+run_global_pipeline(countries = c("tanzania", "malawi"))
+```
+
+---
+
+## Querying the Data Lake
+
+```r
+library(DBI)
+library(duckdb)
+
+con <- dbConnect(duckdb(),
+  "data/processed/global_master/healthscape.duckdb",
+  read_only = TRUE)
+
+# Facility counts by country
+dbGetQuery(con, "
+  SELECT country, COUNT(*) as facilities
+  FROM health_facilities
+  GROUP BY country
+")
+
+# Malaria service coverage
+dbGetQuery(con, "
+  SELECT hf.country, hf.facility_name,
+         hf.latitude, hf.longitude,
+         s.service_name
+  FROM health_facilities hf
+  JOIN facility_services s ON hf.uid = s.facility_uid
+  WHERE s.is_malaria_related = TRUE
+    AND s.include_in_analysis = TRUE
+")
+
+dbDisconnect(con, shutdown = TRUE)
 ```
 
 ---
 
 ## Adding a New Country
 
-1. Place raw file in `data/raw/<country>/`
-2. Add entry to `config/countries.yml` with column mappings
-3. Run `run_global_pipeline(countries = c("<new_country>"))`
+### Facility demographics
+1. Place raw CSV in `data/raw/{country}/`
+2. Add column mapping to `config/countries.yml`
+3. Run `run_global_pipeline()` — picked up automatically
 
-No other code changes needed.
+### Service data
+1. Extract service data from country HFR portal
+   (see `docs/session_notes/` for API reverse engineering method)
+2. Build crosswalk: `crosswalks/{iso}_services_crosswalk.csv`
+   Use `crosswalks/global_services_crosswalk.csv` as reference —
+   only add service names not already in the master crosswalk
+3. Add country config block to `R/standardise/standardise_services.R`
+   under `SERVICE_CONFIG`
+4. Add ISO code to `service_countries` vector in Step 4 of
+   `pipelines/run_global_pipeline.R`
+5. Run `run_global_pipeline(run_countries = FALSE, run_services = TRUE)`
 
 ---
 
-## Plugging in Service Data
+## UID System
 
-Service columns (`inpatient`, `outpatient`, `maternity`, `emergency`,
-`laboratory`, `malaria_services`) are schema-defined but populated via
-a separate join — they are not in the MoH registry files.
+Every facility receives a stable global unique ID:
 
-To join service data:
-```r
-library(dplyr)
-services <- read_csv("data/raw/<country>/services.csv")  # your service file
+```
+Format:   {ISO3}-{6-digit zero-padded}
+Example:  TZA-000142, MWI-001234, NGA-051022
 
-df_standardized <- df_standardized %>%
-  left_join(services, by = "facility_code")
+Registered in: data/processed/uid_registry.csv
+Keyed on:      (country, facility_code)
 ```
 
-The schema columns will then be populated at `enforce_schema_types()` time.
+Service records use a parallel format:
+```
+Format:   {ISO3}-SVC-{6-digit zero-padded}
+Example:  TZA-SVC-000001, MWI-SVC-099013
+```
+
+UIDs are stable across pipeline runs — a facility keeps the same UID even if the pipeline is re-run.
 
 ---
 
-## Known Issues & Notes
+## Crosswalks
 
-- **Nigeria source**: GRID3 v2.0 is a second-party aggregator (not direct MoH).
-  Data provenance is flagged in `data_source` column.
-- **Tanzania open dates**: ~2,066 records had `01jan1970` (Unix epoch zero =
-  missing date). These are cleaned to `NA` by `clean_dates.R`.
-- **Missing coordinates**: ~7.7% of Tanzania facilities lack lat/lon.
-  Records are retained with `coordinate_valid = NA` and `data_quality_flag = "low"`.
-  Future work: geocode by ward centroid using Tanzania admin boundaries.
-- **Botswana**: raw file not yet received. Config entry exists; pipeline will
-  error gracefully until file is placed in `data/raw/botswana/`.
+Crosswalks are translation tables that map raw country-specific service names to the standard 3-level hierarchy. They solve the core cross-country comparability problem:
+
+```
+"mRDT - Rapid Diagnostic Tests"  (Tanzania)  ─┐
+"Malaria rapid test"              (Malawi)     ─┼─► Malaria Services >
+"MRDT available"                  (Malawi)     ─┘    Malaria Diagnosis (mRDT) >
+                                                      Malaria RDT
+```
+
+The `global_services_crosswalk.csv` grows with each new country added and becomes the master reference for all SSA service terminology.
+
+---
+
+## Logging
+
+Every pipeline step is logged in `logs/pipeline_log.csv`:
+
+| Field | Description |
+|---|---|
+| timestamp | When the step ran |
+| country | Which country |
+| step | Pipeline step name |
+| status | START / SUCCESS / FAILED / SKIPPED |
+| message | Row counts, file paths, error messages |
+
+---
+
+## Known Data Issues
+
+| Issue | Countries | Status |
+|---|---|---|
+| 190 facility codes in Malawi services not in HF registry | Malawi | Source gap — facility_uid = NULL for 1,968 rows |
+| `iso` column is NA for Malawi in health_facilities | Malawi | Use `country` column for joins |
+| Tanzania coordinates missing for some facilities | Tanzania | Flagged as `data_quality_flag = low` |
+
+---
+
+## Dependencies
+
+```r
+install.packages(c(
+  "dplyr", "readr", "yaml", "DBI",
+  "duckdb", "arrow", "sf", "lubridate"
+))
+```
+
+---
+
+## References
+
+World Health Organization. *Master facility list resource package: guidance for countries wanting to strengthen their master facility list.* Geneva: WHO; 2017. Available from: https://www.who.int/publications/i/item/-9789241513302
