@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\\\\install_packages.R\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" --vanilla -e \"df <- read.csv\\('C:/Users/Admin/Documents/health_facility_etl-fixed/health_facility_etl-fixed/data/raw/tanzania/hf_tanzania_2026.csv', nrows=2, fileEncoding='latin1'\\); cat\\(paste\\(names\\(df\\), collapse=', '\\)\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" --vanilla \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\\\\run_tz.R\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" --vanilla \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\\\\run_all_countries.R\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" --vanilla \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\\\\install_packages.R\" 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\R\\\\R-4.4.3\\\\bin\\\\Rscript.exe\" --vanilla \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\\\\run_global.R\" 2>&1)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(cd \"C:\\\\Users\\\\Admin\\\\Documents\\\\health_facility_etl-fixed\\\\health_facility_etl-fixed\"; Rscript -e \"reg <- read.csv\\('data/processed/uid_registry.csv'\\); cat\\('Countries in registry:', paste\\(unique\\(reg\\\\$country\\), collapse=', '\\), '\\\\n'\\); cat\\('Total UIDs:', nrow\\(reg\\), '\\\\n'\\)\")"
+    ]
+  }
+}

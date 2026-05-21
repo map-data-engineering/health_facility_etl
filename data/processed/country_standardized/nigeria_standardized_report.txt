@@ -1,8 +1,8 @@
-AfyaScope — Standardized Data Report
+HealthScape — Standardized Data Report
 Country      : Nigeria
-Generated    : 2026-05-15 16:58:33.921468
-Rows         : 51022
-Columns      : 43
+Generated    : 2026-05-21 15:49:11.813315
+Rows         : 50989
+Columns      : 42
 
 Column completeness (% non-null):
   OBJECTID                            100.0%
@@ -14,7 +14,7 @@ Column completeness (% non-null):
   admin1                              100.0%
   admin2                              100.0%
   lga_name_disagreement               100.0%
-  admin3                              100.0%
+  ward                                100.0%
   ward_name_disagreement              100.0%
   facility_name                       100.0%
   facility_name_source                100.0%
@@ -33,7 +33,6 @@ Column completeness (% non-null):
   open_date                             0.0%
   open_year                             0.0%
   uid                                  67.7%
-  admin4                                0.0%
   zone                                  0.0%
   coordinate_source                     0.0%
   ownership_detail                      0.0%
@@ -52,4 +51,4 @@ Column completeness (% non-null):
 Data quality flag distribution:
 
  high   low 
-50975    47 
+50962    27 

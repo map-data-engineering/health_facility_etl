@@ -1,6 +1,6 @@
 # =============================================================
 # standardize_columns.R
-# AfyaScope ETL — Transformation Layer
+# HealthScape ETL — Transformation Layer
 #
 # Maps raw country columns → standardized schema column names.
 # Preserves ALL available fields: admin2/3/4, zone, open_date,
@@ -74,13 +74,13 @@ standardize_columns <- function(df, country_name, countries_config) {
   # ── Remaining optional field renames ─────────────────────────
   # (ownership_detail already handled above)
   df <- safe_rename(df, cfg$admin2_column,                "admin2")
-  df <- safe_rename(df, cfg$admin3_column,                "admin3")
-  df <- safe_rename(df, cfg$admin4_column,                "admin4")
+  #df <- safe_rename(df, cfg$admin3_column,                "admin3")
+  #df <- safe_rename(df, cfg$admin4_column,                "admin4")
   df <- safe_rename(df, cfg$zone_column,                  "zone")
   df <- safe_rename(df, cfg$operation_status_column,      "status")
   df <- safe_rename(df, cfg$open_date_column,             "open_date_raw")
   df <- safe_rename(df, cfg$catchment_population_column,  "catchment_population")
-  df <- safe_rename(df, cfg$urban_rural_strata_column,    "urban_rural_strata")
+  #df <- safe_rename(df, cfg$urban_rural_strata_column,    "urban_rural_strata")
 
   # ── Add constant fields from config ──────────────────────────
   df$country     <- tools::toTitleCase(country_name)

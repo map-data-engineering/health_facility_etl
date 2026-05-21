@@ -229,30 +229,61 @@ run_global_pipeline <- function(
                   "include_in_analysis","extracted_date","source_url",
                   "pipeline_version","facility_code","needs_review")
 
+    # svc_dfs <- list()
+    # for (country in run_list) {
+    #   svc_script <- file.path("R", "standardise",
+    #                           sprintf("standardise_%s_services.R", country))
+    #   if (!file.exists(svc_script)) {
+    #     cat(sprintf("  [services] %s — no script found, skipping\n", country))
+    #     next
+    #   }
+    #   source(svc_script)
+    #   fn_name <- sprintf("standardise_%s_services", country)
+    #   df <- tryCatch(
+    #     do.call(fn_name, list()),
+    #     error = function(e) {
+    #       log_message("GLOBAL", paste("services", country), "FAILED", e$message)
+    #       cat(sprintf("  [services] %s FAILED: %s\n", country, e$message))
+    #       NULL
+    #     }
+    #   )
+    #   if (!is.null(df)) {
+    #     svc_dfs[[country]] <- df
+    #     cat(sprintf("  [services] %s: %d rows\n", country, nrow(df)))
+    #   }
+    # }
+    
+    # ── load unified function ──────────────────────────────
+    source("R/standardise/standardise_services.R")
+    
+    # Countries with service data — add new ISO codes here
+    service_countries <- c("TZA", "MWI")  # ← only change needed
+    
     svc_dfs <- list()
-    for (country in run_list) {
-      svc_script <- file.path("R", "standardise",
-                              sprintf("standardise_%s_services.R", country))
-      if (!file.exists(svc_script)) {
-        cat(sprintf("  [services] %s — no script found, skipping\n", country))
-        next
-      }
-      source(svc_script)
-      fn_name <- sprintf("standardise_%s_services", country)
+    for (iso in service_countries) {
+      
+      # Skip if not in current run_list
+      if (!iso %in% run_list &
+          !is.null(countries)) next
+      
       df <- tryCatch(
-        do.call(fn_name, list()),
+        standardise_services(iso),
         error = function(e) {
-          log_message("GLOBAL", paste("services", country), "FAILED", e$message)
-          cat(sprintf("  [services] %s FAILED: %s\n", country, e$message))
+          log_message("GLOBAL", paste("services", iso),
+                      "FAILED", e$message)
+          cat(sprintf("  [services] %s FAILED: %s\n",
+                      iso, e$message))
           NULL
         }
       )
       if (!is.null(df)) {
-        svc_dfs[[country]] <- df
-        cat(sprintf("  [services] %s: %d rows\n", country, nrow(df)))
+        svc_dfs[[iso]] <- df
+        cat(sprintf("  [services] %s: %d rows\n",
+                    iso, nrow(df)))
       }
     }
 
+    #**
     if (length(svc_dfs) > 0) {
       if (!requireNamespace("duckdb", quietly = TRUE) ||
           !requireNamespace("DBI",    quietly = TRUE)) {

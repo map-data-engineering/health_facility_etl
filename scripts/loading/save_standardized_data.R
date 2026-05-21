@@ -1,6 +1,6 @@
 # =============================================================
 # save_standardized_data.R
-# AfyaScope ETL — Loading Layer
+# Healthscape ETL — Loading Layer
 #
 # Saves the standardized country dataframe to:
 #   data/processed/country_standardized/<country>_standardized.csv
@@ -25,7 +25,7 @@ save_standardized_data <- function(df, country_name) {
 
   null_pct <- sapply(df, function(x) round(mean(is.na(x)) * 100, 1))
   report_lines <- c(
-    paste0("AfyaScope — Standardized Data Report"),
+    paste0("HealthScape — Standardized Data Report"),
     paste0("Country      : ", tools::toTitleCase(country_name)),
     paste0("Generated    : ", Sys.time()),
     paste0("Rows         : ", nrow(df)),

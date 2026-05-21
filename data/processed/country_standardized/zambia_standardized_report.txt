@@ -1,38 +1,37 @@
-AfyaScope — Standardized Data Report
+HealthScape — Standardized Data Report
 Country      : Zambia
-Generated    : 2026-05-15 16:57:59.420299
-Rows         : 3731
-Columns      : 38
+Generated    : 2026-05-21 15:48:17.346976
+Rows         : 3499
+Columns      : 37
 
 Column completeness (% non-null):
   facility_code                       100.0%
-  DHIS2 UID                            66.8%
-  Hims code                            94.0%
+  DHIS2 UID                            69.2%
+  Hims code                            95.7%
   facility_name                       100.0%
   admin1                              100.0%
   admin2                              100.0%
-  Constituency                         99.9%
-  admin3                               99.8%
-  zone                                  2.9%
+  Constituency                        100.0%
+  Ward                                 99.8%
+  zone                                  2.7%
   Location                            100.0%
   facility_type                       100.0%
   ownership_detail                    100.0%
   status                              100.0%
   Mobility status                     100.0%
   Accesibility                        100.0%
-  catchment_population                 59.7%
-  Catchment population cso             79.3%
-  Number of households                 40.7%
-  latitude                             96.0%
-  longitude                            96.0%
+  catchment_population                 60.6%
+  Catchment population cso             81.5%
+  Number of households                 41.8%
+  latitude                            100.0%
+  longitude                           100.0%
   ownership                           100.0%
   country                             100.0%
   data_source                         100.0%
-  coordinate_valid                     96.0%
+  coordinate_valid                    100.0%
   open_date                             0.0%
   open_year                             0.0%
   uid                                 100.0%
-  admin4                                0.0%
   coordinate_source                     0.0%
   urban_rural_strata                    0.0%
   inpatient                             0.0%
@@ -47,4 +46,4 @@ Column completeness (% non-null):
 Data quality flag distribution:
 
 high  low 
-3491  240 
+3487   12 

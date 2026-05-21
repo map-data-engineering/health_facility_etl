@@ -1,27 +1,25 @@
-AfyaScope — Standardized Data Report
+HealthScape — Standardized Data Report
 Country      : Malawi
-Generated    : 2026-05-20 14:15:19.000745
-Rows         : 1929
-Columns      : 30
+Generated    : 2026-05-21 15:47:57.727311
+Rows         : 1717
+Columns      : 28
 
 Column completeness (% non-null):
   facility_name                       100.0%
   facility_code                       100.0%
   facility_type                       100.0%
-  latitude                             89.9%
-  longitude                            89.9%
+  latitude                            100.0%
+  longitude                           100.0%
   admin1                              100.0%
   status                              100.0%
   country                             100.0%
   ownership                           100.0%
   data_source                         100.0%
-  coordinate_valid                     89.9%
+  coordinate_valid                    100.0%
   open_date                             0.0%
   open_year                             0.0%
   uid                                 100.0%
   admin2                                0.0%
-  admin3                                0.0%
-  admin4                                0.0%
   zone                                  0.0%
   coordinate_source                     0.0%
   ownership_detail                      0.0%
@@ -39,4 +37,4 @@ Column completeness (% non-null):
 Data quality flag distribution:
 
 high  low 
-1734  195 
+1712    5 

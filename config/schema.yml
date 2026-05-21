@@ -50,15 +50,15 @@ standard_columns:
     description: District / LGA (level 2)
     required: false
 
-  admin3:
-    type: string
-    description: Sub-district / Ward / Sub-county (level 3)
-    required: false
+  #admin3:
+    #type: string
+    #description: Sub-district / Ward / Sub-county (level 3)
+    #required: false
 
-  admin4:
-    type: string
-    description: Village / Parish / Locality (level 4)
-    required: false
+  #admin4:
+    #type: string
+    #description: Village / Parish / Locality (level 4)
+    #required: false
 
   zone:
     type: string

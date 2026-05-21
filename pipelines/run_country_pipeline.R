@@ -15,9 +15,9 @@ library(dplyr)
 
 source("scripts/utils/logger.R")
 source("scripts/extraction/read_country_data.R")
-source("scripts/transformation/standardize_columns.R")
+source("scripts/transformation/standardize_columns.R") #removed admn 3,4
 source("scripts/transformation/clean_coordinates.R")
-source("scripts/transformation/validate_coordinates.R")
+#source("scripts/transformation/validate_coordinates.R")
 source("scripts/transformation/geocode_missing.R")
 source("scripts/transformation/clean_dates.R")
 source("scripts/transformation/enforce_schema_types.R")

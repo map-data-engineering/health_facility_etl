@@ -1,14 +1,14 @@
 AfyaScope — Tanzania Services Standardisation Report
-Generated: 2026-05-20 13:56:33.431592
+Generated       : 2026-05-21 15:49:16.526335
 Pipeline version: 2.0
 
 --- Row counts ---
-Total service records  : 208941
-Unique facility_codes  : 11904
-Matched facility_uid   : 208941 (100.0%)
-Unmatched facility_uid : 0
-include_in_analysis TRUE : 191656
-needs_review TRUE        : 2
+Total records        : 208941
+Unique facilities    : 11904
+Matched facility_uid : 208941 (100.0%)
+Unmatched uid        : 0
+include_in_analysis  : 191656
+needs_review TRUE    : 2
 
 --- Domain distribution ---
   HIV/AIDS Services                   60165 (28.8%)

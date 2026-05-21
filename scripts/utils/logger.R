@@ -1,6 +1,6 @@
 # =============================================================
 # logger.R
-# AfyaScope ETL — Utilities
+# HealthScape ETL — Utilities
 #
 # Appends a structured log entry to logs/pipeline_log.csv.
 # Creates the log file with header if it does not exist.

@@ -1,14 +1,14 @@
 AfyaScope — Malawi Services Standardisation Report
-Generated: 2026-05-20 14:33:59.418286
+Generated       : 2026-05-21 15:49:18.178116
 Pipeline version: 2.0
 
 --- Row counts ---
-Total service records   : 99013
-Unique facility_codes   : 1571
-Matched facility_uid    : 97045 (98.0%)
-Unmatched facility_uid  : 1968 — run run_malawi_pipeline.R to populate
-include_in_analysis TRUE : 37445
-needs_review TRUE        : 0
+Total records        : 99013
+Unique facilities    : 1571
+Matched facility_uid : 97045 (98.0%)
+Unmatched uid        : 1968
+include_in_analysis  : 37445
+needs_review TRUE    : 0
 
 --- Domain distribution ---
   Support Services                    61568 (62.2%)
@@ -19,5 +19,5 @@ needs_review TRUE        : 0
   Malaria Services                    5136 (5.2%)
   Diagnostic Services                 4496 (4.5%)
 
---- Unmatched crosswalk rows (new service names) ---
+--- Unmatched crosswalk rows ---
   None

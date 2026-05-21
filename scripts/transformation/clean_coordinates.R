@@ -1,15 +1,18 @@
 # =============================================================
 # clean_coordinates.R
-# AfyaScope ETL — Transformation Layer
+# HealthScape ETL — Transformation Layer
 #
 # 1. Coerces lat/lon to numeric
-# 2. Flags implausible values: global range + country bounding box
-# 3. Adds coordinate_valid column (basic range + bbox check)
-#    Full within-country polygon validation is done separately via
-#    validate_coordinates.R which requires the sf/geodata packages.
+# 2. Removes records with missing coordinates
+# 3. Flags implausible values: global range + country bounding box
+# 4. Adds coordinate_valid column (basic range + bbox check)
+# 5. Validates points against country shapefile via malariaAtlas::getShp()
+#    and retains only points falling within the country boundary
 # =============================================================
 
 library(dplyr)
+library(sf)
+library(malariaAtlas)
 
 # Country bounding boxes: generous but realistic extents.
 # Points outside the bbox are almost certainly swapped or otherwise wrong.
@@ -23,38 +26,89 @@ library(dplyr)
 )
 
 clean_coordinates <- function(df, country = NULL) {
-
+  
+  # ------------------------------------------------------------------
+  # Step 1: Coerce to numeric
+  # ------------------------------------------------------------------
   df <- df %>%
     mutate(
       latitude  = suppressWarnings(as.numeric(latitude)),
       longitude = suppressWarnings(as.numeric(longitude))
     )
-
+  
+  # ------------------------------------------------------------------
+  # Step 2: Remove records with missing coordinates
+  # ------------------------------------------------------------------
+  n_missing <- sum(is.na(df$latitude) | is.na(df$longitude))
+  if (n_missing > 0) {
+    message(sprintf("  [coordinates] %d records with missing lat/lon removed", n_missing))
+    df <- df %>% filter(!is.na(latitude), !is.na(longitude))
+  }
+  
+  # ------------------------------------------------------------------
+  # Step 3: Bounding box validation
+  # ------------------------------------------------------------------
   bbox <- if (!is.null(country)) .COUNTRY_BBOX[[tolower(country)]] else NULL
-
+  
   df <- df %>%
     mutate(
       coordinate_valid = case_when(
-        is.na(latitude) | is.na(longitude)   ~ NA,
         latitude  < -90  | latitude  > 90    ~ FALSE,
         longitude < -180 | longitude > 180   ~ FALSE,
-        # Country-aware bounding box: catches swapped and grossly wrong coords.
-        # Falls through to TRUE (= passes range check) when no bbox is available.
         !is.null(bbox) & (
           latitude  < bbox$lat_min | latitude  > bbox$lat_max |
-          longitude < bbox$lon_min | longitude > bbox$lon_max
+            longitude < bbox$lon_min | longitude > bbox$lon_max
         )                                    ~ FALSE,
         TRUE                                 ~ TRUE
       )
     )
-
-  n_missing <- sum(is.na(df$latitude) | is.na(df$longitude))
+  
   n_invalid <- sum(df$coordinate_valid == FALSE, na.rm = TRUE)
-
-  if (n_missing > 0)
-    message(sprintf("  [coordinates] %d records missing lat/lon (kept, flagged)", n_missing))
-  if (n_invalid > 0)
+  if (n_invalid > 0) {
     message(sprintf("  [coordinates] %d records have implausible coordinates (flagged FALSE)", n_invalid))
-
+  }
+  
+  # ------------------------------------------------------------------
+  # Step 4: Polygon validation via malariaAtlas::getShp()
+  #         Capitalise first letter to match malariaAtlas expectations
+  #         e.g. "tanzania" -> "Tanzania"
+  # ------------------------------------------------------------------
+  if (!is.null(country)) {
+    
+    country_label <- paste0(toupper(substring(country, 1, 1)),
+                            tolower(substring(country, 2)))
+    
+    message(sprintf("  [coordinates] Fetching shapefile for %s via malariaAtlas ...", country_label))
+    
+    country_shp <- malariaAtlas::getShp(country = country_label, admin_level = "admin0")
+    country_shp <- st_as_sf(country_shp)
+    country_shp <- st_make_valid(country_shp)
+    
+    # Convert df to sf, filter to valid-flagged points only before spatial check
+    df_sf <- df %>%
+      filter(coordinate_valid == TRUE) %>%
+      st_as_sf(coords = c("longitude", "latitude"), crs = 4326, remove = FALSE)
+    
+    # Ensure matching CRS
+    country_shp <- st_transform(country_shp, crs = st_crs(df_sf))
+    
+    # Spatial filter: keep only points within country boundary
+    df_inside  <- df_sf[country_shp, ]
+    n_outside  <- nrow(df_sf) - nrow(df_inside)
+    
+    if (n_outside > 0) {
+      message(sprintf("  [coordinates] %d records fall outside %s boundary and were removed",
+                      n_outside, country_label))
+    }
+    
+    # Drop sf geometry, return plain dataframe
+    df_inside <- st_drop_geometry(df_inside)
+    
+    # Bind back the coordinate_valid == FALSE records if you want to retain them,
+    # or drop entirely — here we drop since they failed validation
+    df <- df_inside
+    
+  }
+  
   return(df)
 }
