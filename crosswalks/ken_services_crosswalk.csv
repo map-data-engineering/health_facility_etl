@@ -1,0 +1,209 @@
+source_category,source_service_name,service_domain,service_group,service_name,is_clinical,is_malaria_related,include_in_analysis,needs_review
+ACCIDENT AND EMERGENCY CASUALTY SERVICES,Accident and Emergency casualty Services,Clinical Services,Emergency Services,Accident and Emergency casualty Services,TRUE,FALSE,TRUE,FALSE
+ACCIDENT AND EMERGENCY CASUALTY SERVICES,General Emergency  Services,Clinical Services,Emergency Services,General Emergency  Services,TRUE,FALSE,TRUE,FALSE
+ACCIDENT AND EMERGENCY CASUALTY SERVICES,General Emergency Services,Clinical Services,Emergency Services,General Emergency Services,TRUE,FALSE,TRUE,FALSE
+AMBULATORY SERVICES,Ambulatory Services,Clinical Services,General Clinical Services,Ambulatory Services,TRUE,FALSE,TRUE,FALSE
+ANTENATAL CARE,Focused Antenatal Care,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Focused Antenatal Care,TRUE,FALSE,TRUE,FALSE
+ANTENATAL CARE,Specialised ANC -high risk pregnancy,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Specialised ANC -high risk pregnancy,TRUE,FALSE,TRUE,FALSE
+BLOOD SERVICES,Blood Bank,Diagnostic Services,Diagnostic Services,Blood Bank,TRUE,FALSE,TRUE,FALSE
+BLOOD SERVICES,Blood bank,Diagnostic Services,Diagnostic Services,Blood bank,TRUE,FALSE,TRUE,FALSE
+BLOOD SERVICES,Facility offering Blood Transfusion Service,Diagnostic Services,Diagnostic Services,Facility offering Blood Transfusion Service,TRUE,FALSE,TRUE,FALSE
+BLOOD SERVICES,Regional Blood bank,Diagnostic Services,Diagnostic Services,Regional Blood bank,TRUE,FALSE,TRUE,FALSE
+BLOOD SERVICES,Satellite Blood Transfusion service,Diagnostic Services,Diagnostic Services,Satellite Blood Transfusion service,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Breast,Diagnostic Services,Diagnostic Services,Breast,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Coloreactal,Diagnostic Services,Diagnostic Services,Coloreactal,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Colorectal,Diagnostic Services,Diagnostic Services,Colorectal,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,HPV TEST,Diagnostic Services,Diagnostic Services,HPV TEST,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Pap smear,Diagnostic Services,Diagnostic Services,Pap smear,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Prostate,Diagnostic Services,Diagnostic Services,Prostate,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Screening using VIA/VILI,Diagnostic Services,Diagnostic Services,Screening using VIA/VILI,TRUE,FALSE,TRUE,FALSE
+CANCER SCREENING,Visual Inspection Methods (VIA/VILA),Diagnostic Services,Diagnostic Services,Visual Inspection Methods (VIA/VILA),TRUE,FALSE,TRUE,FALSE
+CENTRAL STERILE SERVICES DEPARTMENT,Central Sterile Services,Support Services,Equipment and Infrastructure,Central Sterile Services,FALSE,FALSE,FALSE,FALSE
+CURATIVE SERVICES,General Outpatient,Clinical Services,General Clinical Services,General Outpatient,TRUE,FALSE,TRUE,FALSE
+CURATIVE SERVICES,Inpatient,Clinical Services,General Clinical Services,Inpatient,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Basic dental services,Clinical Services,General Clinical Services,Basic dental services,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Dentist Anesthesiologists,Clinical Services,General Clinical Services,Dentist Anesthesiologists,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Drug dispensing and prescription refill,Clinical Services,General Clinical Services,Drug dispensing and prescription refill,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Endodontist,Clinical Services,General Clinical Services,Endodontist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Oral and Maxillofacial Pathologist,Clinical Services,General Clinical Services,Oral and Maxillofacial Pathologist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Oral and Maxillofacial Radiologist,Clinical Services,General Clinical Services,Oral and Maxillofacial Radiologist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Oral and Maxillofacial Surgeon,Clinical Services,General Clinical Services,Oral and Maxillofacial Surgeon,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Orthodontist,Clinical Services,General Clinical Services,Orthodontist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Periodontist,Clinical Services,General Clinical Services,Periodontist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Prosthodontist,Clinical Services,General Clinical Services,Prosthodontist,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,Specialised Dental services,Clinical Services,General Clinical Services,Specialised Dental services,TRUE,FALSE,TRUE,FALSE
+DENTAL SERVICES,dental xray,Clinical Services,General Clinical Services,dental xray,TRUE,FALSE,TRUE,FALSE
+EMERGENCY PREPAREDNESS,Basic Emergency Preparedness -Advanced  Life Support,Clinical Services,Emergency Services,Basic Emergency Preparedness -Advanced  Life Support,TRUE,FALSE,TRUE,FALSE
+EMERGENCY PREPAREDNESS,Comprehensive Emergency Preparedness -Basic Life Support,Clinical Services,Emergency Services,Comprehensive Emergency Preparedness -Basic Life Support,TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Bilateral Tubal Ligation (BTL),Reproductive & Maternal Health,Family Planning,Bilateral Tubal Ligation (BTL),TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Long Acting Method,Reproductive & Maternal Health,Family Planning,Long Acting Method,TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Natural,Reproductive & Maternal Health,Family Planning,Natural,TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Permanent,Reproductive & Maternal Health,Family Planning,Permanent,TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Short Acting Method,Reproductive & Maternal Health,Family Planning,Short Acting Method,TRUE,FALSE,TRUE,FALSE
+FAMILY PLANNING,Vasectomy,Reproductive & Maternal Health,Family Planning,Vasectomy,TRUE,FALSE,TRUE,FALSE
+FORENSIC SERVICES,Basic -collection and preservation of evidence,Community & Preventive Health,Health Promotion and Disease Prevention,Basic -collection and preservation of evidence,FALSE,FALSE,FALSE,FALSE
+FORENSIC SERVICES,"Comprehensive -Collection, Preservation and Analysis of Evidence",Community & Preventive Health,Health Promotion and Disease Prevention,"Comprehensive -Collection, Preservation and Analysis of Evidence",FALSE,FALSE,FALSE,FALSE
+FORENSIC SERVICES,Forensic Services,Community & Preventive Health,Health Promotion and Disease Prevention,Forensic Services,FALSE,FALSE,FALSE,FALSE
+FORENSIC SERVICES,Post mortem,Community & Preventive Health,Health Promotion and Disease Prevention,Post mortem,FALSE,FALSE,FALSE,FALSE
+HIGH DEPENDENCY SERVICES,High depedency Services,Clinical Services,General Inpatient (IPD),High depedency Services,TRUE,FALSE,TRUE,FALSE
+HIV TREATMENT,HIV treatment and care,HIV/AIDS Services,HIV/AIDS Care and Treatment,HIV treatment and care,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,ARV for PREP,HIV/AIDS Services,HIV/AIDS Services,ARV for PREP,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,Condom Distribution \u0026 STI Prevention,HIV/AIDS Services,HIV/AIDS Services,Condom Distribution \u0026 STI Prevention,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,EMTCT-Elimination of Mother to Child  Transmission of HIV,HIV/AIDS Services,HIV/AIDS Services,EMTCT-Elimination of Mother to Child  Transmission of HIV,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HBV/HCV Coinfection Prevention and Management,HIV/AIDS Services,HIV/AIDS Services,HBV/HCV Coinfection Prevention and Management,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HEI - HIV exposed infants,HIV/AIDS Services,HIV/AIDS Services,HEI - HIV exposed infants,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HIV Counselling \u0026 Testing,HIV/AIDS Services,HIV/AIDS Services,HIV Counselling \u0026 Testing,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HIV preventive Package,HIV/AIDS Services,HIV/AIDS Services,HIV preventive Package,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HIV risk reduction for priority populations and geographies,HIV/AIDS Services,HIV/AIDS Services,HIV risk reduction for priority populations and geographies,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,HIV risk reduction services for prioity populations and geographies,HIV/AIDS Services,HIV/AIDS Services,HIV risk reduction services for prioity populations and geographies,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,Infection Prevention and control to mitigate HIV infection in the work place,HIV/AIDS Services,HIV/AIDS Services,Infection Prevention and control to mitigate HIV infection in the work place,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,Management of Sexually Transmitted Illness (STI),HIV/AIDS Services,HIV/AIDS Services,Management of Sexually Transmitted Illness (STI),TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,"Nutrition assessment ,counselling and support ( The NACS process) for PLHIVs",HIV/AIDS Services,HIV/AIDS Services,"Nutrition assessment ,counselling and support ( The NACS process) for PLHIVs",TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,"Opportunistic Infections, screening and prevention",HIV/AIDS Services,HIV/AIDS Services,"Opportunistic Infections, screening and prevention",TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,Post-Exposure Prophylaxis (PEP),HIV/AIDS Services,HIV/AIDS Services,Post-Exposure Prophylaxis (PEP),TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,TB/HIV Coinfection Prevention and management,HIV/AIDS Services,HIV/AIDS Services,TB/HIV Coinfection Prevention and management,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS PREVENTION AND CARE SERVICES,VMMC-Voluntary Medical Male Circumcision Services,HIV/AIDS Services,HIV/AIDS Services,VMMC-Voluntary Medical Male Circumcision Services,TRUE,FALSE,TRUE,FALSE
+HIV/AIDS TREATMENT SERVICES,"Adherence, preparation, monitoring and support",HIV/AIDS Services,HIV/AIDS Care and Treatment,"Adherence, preparation, monitoring and support",TRUE,FALSE,TRUE,FALSE
+HIV/AIDS TREATMENT SERVICES,Antiretroviral Therapy,HIV/AIDS Services,HIV/AIDS Care and Treatment,Antiretroviral Therapy,TRUE,FALSE,TRUE,FALSE
+HOSPICE SERVICE,Hospice service,Clinical Services,General Clinical Services,Hospice service,TRUE,FALSE,TRUE,FALSE
+ICU SERVICES,ICU services,Clinical Services,General Inpatient (IPD),ICU services,TRUE,FALSE,TRUE,FALSE
+IMMUNISATION,TD for Pregnant Women,Community & Preventive Health,Immunisation/Vaccination,TD for Pregnant Women,TRUE,FALSE,TRUE,FALSE
+IMMUNISATION,TT toxoid for Pregnant Women,Community & Preventive Health,Immunisation/Vaccination,TT toxoid for Pregnant Women,TRUE,FALSE,TRUE,FALSE
+IMMUNISATION,Vaccination services given to travellers,Community & Preventive Health,Immunisation/Vaccination,Vaccination services given to travellers,TRUE,FALSE,TRUE,FALSE
+INPATIENT SERVICES,ICU,Clinical Services,General Inpatient (IPD),ICU,TRUE,FALSE,TRUE,FALSE
+INTEGRATED MANAGEMENT OF CHILDHOOD ILLNESS,Basic IMCI-management of acute Infections,Community & Preventive Health,Growth Monitoring & Nutrition,Basic IMCI-management of acute Infections,TRUE,FALSE,TRUE,FALSE
+INTEGRATED MANAGEMENT OF CHILDHOOD ILLNESS,Comprehensive IMCI-resuscitation services,Community & Preventive Health,Growth Monitoring & Nutrition,Comprehensive IMCI-resuscitation services,TRUE,FALSE,TRUE,FALSE
+INTEGRATED MANAGEMENT OF CHILDHOOD ILLNESS,Emergency Triage Assessment and Treatment,Community & Preventive Health,Growth Monitoring & Nutrition,Emergency Triage Assessment and Treatment,TRUE,FALSE,TRUE,FALSE
+INTEGRATED MANAGEMENT OF CHILDHOOD ILLNESS,Integrated Management of Newborn \u0026 Childhood Illnesses,Community & Preventive Health,Growth Monitoring & Nutrition,Integrated Management of Newborn \u0026 Childhood Illnesses,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,COVID 19 vaccination,Community & Preventive Health,Immunisation/Vaccination,COVID 19 vaccination,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,Child Immunization,Community & Preventive Health,Immunisation/Vaccination,Child Immunization,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,HPV Vaccination,Community & Preventive Health,Immunisation/Vaccination,HPV Vaccination,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,TD for pregnant women,Community & Preventive Health,Immunisation/Vaccination,TD for pregnant women,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,Vaccination Services Given to Travellers,Community & Preventive Health,Immunisation/Vaccination,Vaccination Services Given to Travellers,TRUE,FALSE,TRUE,FALSE
+INTERGRATED IMMUNIZATION,"Vaccination to travellers,",Community & Preventive Health,Immunisation/Vaccination,"Vaccination to travellers,",TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Bacteriology,Diagnostic Services,Diagnostic Services,Bacteriology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Blood Transfusion,Diagnostic Services,Diagnostic Services,Blood Transfusion,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class A,Diagnostic Services,Diagnostic Services,Class A,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class B,Diagnostic Services,Diagnostic Services,Class B,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class C,Diagnostic Services,Diagnostic Services,Class C,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class D,Diagnostic Services,Diagnostic Services,Class D,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class E,Diagnostic Services,Diagnostic Services,Class E,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Class F,Diagnostic Services,Diagnostic Services,Class F,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Clinical Chemistry,Diagnostic Services,Diagnostic Services,Clinical Chemistry,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Cytology,Diagnostic Services,Diagnostic Services,Cytology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Genetic and molecular biology,Diagnostic Services,Diagnostic Services,Genetic and molecular biology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Hematology and coagulation,Diagnostic Services,Diagnostic Services,Hematology and coagulation,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Histology,Diagnostic Services,Diagnostic Services,Histology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Microbiology,Diagnostic Services,Diagnostic Services,Microbiology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Parsitiology,Diagnostic Services,Diagnostic Services,Parsitiology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Serology,Diagnostic Services,Diagnostic Services,Serology,TRUE,FALSE,TRUE,FALSE
+LABORATORY SERVICES,Strip Based and Microscopy,Diagnostic Services,Diagnostic Services,Strip Based and Microscopy,TRUE,FALSE,TRUE,FALSE
+LEPROSY DIAGNOSIS,Slit Skin Smears Culture,Clinical Services,General Clinical Services,Slit Skin Smears Culture,TRUE,FALSE,TRUE,FALSE
+LEPROSY DIAGNOSIS,Slit Skin Smears Microscopy,Clinical Services,General Clinical Services,Slit Skin Smears Microscopy,TRUE,FALSE,TRUE,FALSE
+LEPROSY DIAGNOSIS,Slit skin smear culture,Clinical Services,General Clinical Services,Slit skin smear culture,TRUE,FALSE,TRUE,FALSE
+LEPROSY DIAGNOSIS,Slit skin smear miroscopy,Clinical Services,General Clinical Services,Slit skin smear miroscopy,TRUE,FALSE,TRUE,FALSE
+LEPROSY TREATMENT,Leprosy Treatment,Clinical Services,General Clinical Services,Leprosy Treatment,TRUE,FALSE,TRUE,FALSE
+MATERNITY SERVICES,Basic Obstetric Care (BMOC),Reproductive & Maternal Health,Reproductive & Maternal Health Services,Basic Obstetric Care (BMOC),TRUE,FALSE,TRUE,FALSE
+MATERNITY SERVICES,Comprehensive Maternity Obstetric Care (CeMOC),Reproductive & Maternal Health,Reproductive & Maternal Health Services,Comprehensive Maternity Obstetric Care (CeMOC),TRUE,FALSE,TRUE,FALSE
+MENTAL HEALTH SERVICES,"Basic Mental Health Services -Psychosocial interventions promotive, preventive mental health services",Clinical Services,General Clinical Services,"Basic Mental Health Services -Psychosocial interventions promotive, preventive mental health services",TRUE,FALSE,TRUE,FALSE
+MENTAL HEALTH SERVICES,Occpational and Medical Rehabilitation,Clinical Services,General Clinical Services,Occpational and Medical Rehabilitation,TRUE,FALSE,TRUE,FALSE
+MENTAL HEALTH SERVICES,Specialised Mental Health Services - Vocational and medical rehabilitation centres,Clinical Services,General Clinical Services,Specialised Mental Health Services - Vocational and medical rehabilitation centres,TRUE,FALSE,TRUE,FALSE
+MORTUARY SERVICES,Basic Mortuary Services,Support Services,Support Services,Basic Mortuary Services,FALSE,FALSE,FALSE,FALSE
+MORTUARY SERVICES,Comprehensive Mortuary Services,Support Services,Support Services,Comprehensive Mortuary Services,FALSE,FALSE,FALSE,FALSE
+NEWBORN CARE SERVICE,Basic- Perform basic neonatal resuscitation,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Basic- Perform basic neonatal resuscitation,TRUE,FALSE,TRUE,FALSE
+NEWBORN CARE SERVICE,Comprehensive-management of life-threatening new born complications,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Comprehensive-management of life-threatening new born complications,TRUE,FALSE,TRUE,FALSE
+NEWBORN CARE SERVICE,New born Care Service,Reproductive & Maternal Health,Reproductive & Maternal Health Services,New born Care Service,TRUE,FALSE,TRUE,FALSE
+NHIF ACCREDITATION STATUS,Facility Accredited by NHIF,Support Services,Support Services,Facility Accredited by NHIF,FALSE,FALSE,FALSE,FALSE
+NUTRITION SERVICES,Growth Monitoring,Community & Preventive Health,Growth Monitoring & Nutrition,Growth Monitoring,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Integrated Management of Acute Malnutrition,Community & Preventive Health,Growth Monitoring & Nutrition,Integrated Management of Acute Malnutrition,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Multiple Micronutrients,Community & Preventive Health,Growth Monitoring & Nutrition,Multiple Micronutrients,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Nutrition Counselling,Community & Preventive Health,Growth Monitoring & Nutrition,Nutrition Counselling,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Supplemental Feeding Program,Community & Preventive Health,Growth Monitoring & Nutrition,Supplemental Feeding Program,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Therapeitic feeding program,Community & Preventive Health,Growth Monitoring & Nutrition,Therapeitic feeding program,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Therapeutic feeding Program,Community & Preventive Health,Growth Monitoring & Nutrition,Therapeutic feeding Program,TRUE,FALSE,TRUE,FALSE
+NUTRITION SERVICES,Total Parental Nutrition,Community & Preventive Health,Growth Monitoring & Nutrition,Total Parental Nutrition,TRUE,FALSE,TRUE,FALSE
+OCCUPATIONAL THERAPY,Basic Occupational Therapy-all,Clinical Services,General Clinical Services,Basic Occupational Therapy-all,TRUE,FALSE,TRUE,FALSE
+OCCUPATIONAL THERAPY,Specialised Occupational Therapy - includes paediatric,Clinical Services,General Clinical Services,Specialised Occupational Therapy - includes paediatric,TRUE,FALSE,TRUE,FALSE
+ONCOLOGY SERVICES,Chemotherapy,Clinical Services,General Clinical Services,Chemotherapy,TRUE,FALSE,TRUE,FALSE
+ONCOLOGY SERVICES,Counselling for Oncology Services,Clinical Services,General Clinical Services,Counselling for Oncology Services,TRUE,FALSE,TRUE,FALSE
+ONCOLOGY SERVICES,Cryotherapy,Clinical Services,General Clinical Services,Cryotherapy,TRUE,FALSE,TRUE,FALSE
+ONCOLOGY SERVICES,Leep,Clinical Services,General Clinical Services,Leep,TRUE,FALSE,TRUE,FALSE
+ONCOLOGY SERVICES,Radiotherapy,Clinical Services,General Clinical Services,Radiotherapy,TRUE,FALSE,TRUE,FALSE
+OPHTHALMIC SERVICES,Basic Eye Care,Clinical Services,General Clinical Services,Basic Eye Care,TRUE,FALSE,TRUE,FALSE
+OPHTHALMIC SERVICES1,Ophthalmic services,Clinical Services,General Clinical Services,Ophthalmic services,TRUE,FALSE,TRUE,FALSE
+ORGAN TRANSPLANT,Organ Transplant,Clinical Services,Surgical Services,Organ Transplant,TRUE,FALSE,TRUE,FALSE
+ORTHOPAEDIC TECHNOLOGY SERVICES,Orthopaedic Basic Services,Clinical Services,General Clinical Services,Orthopaedic Basic Services,TRUE,FALSE,TRUE,FALSE
+ORTHOPAEDIC TECHNOLOGY SERVICES,Orthopaedic procedures,Clinical Services,General Clinical Services,Orthopaedic procedures,TRUE,FALSE,TRUE,FALSE
+ORTHOPAEDIC TECHNOLOGY SERVICES,Orthopaedic surgeries,Clinical Services,General Clinical Services,Orthopaedic surgeries,TRUE,FALSE,TRUE,FALSE
+ORTHOPAEDIC TECHNOLOGY SERVICES,Specialized Orthopaedic Technology Service,Clinical Services,General Clinical Services,Specialized Orthopaedic Technology Service,TRUE,FALSE,TRUE,FALSE
+PHARMACY SERVICES,Hospital - Retail services,Support Services,Therapeutics and Pharmacy,Hospital - Retail services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,Hospital-Retail Service,Support Services,Therapeutics and Pharmacy,Hospital-Retail Service,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,Specialized pharmaceutical care,Support Services,Therapeutics and Pharmacy,Specialized pharmaceutical care,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,Stand Alone - Manufacturing services,Support Services,Therapeutics and Pharmacy,Stand Alone - Manufacturing services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,Stand Alone - Retail services,Support Services,Therapeutics and Pharmacy,Stand Alone - Retail services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,Stand Alone - Wholesale services,Support Services,Therapeutics and Pharmacy,Stand Alone - Wholesale services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,clinical Pharmacist services,Support Services,Therapeutics and Pharmacy,clinical Pharmacist services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,specialized clinical pharmacy services,Support Services,Therapeutics and Pharmacy,specialized clinical pharmacy services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,therapeutic drug monitoring services,Support Services,Therapeutics and Pharmacy,therapeutic drug monitoring services,FALSE,FALSE,FALSE,FALSE
+PHARMACY SERVICES,toxicology services,Support Services,Therapeutics and Pharmacy,toxicology services,FALSE,FALSE,FALSE,FALSE
+PHYSIO THERAPY,Basic Physiotherapy,Clinical Services,General Clinical Services,Basic Physiotherapy,TRUE,FALSE,TRUE,FALSE
+PHYSIO THERAPY,Specialised Physiotherapy,Clinical Services,General Clinical Services,Specialised Physiotherapy,TRUE,FALSE,TRUE,FALSE
+POSTNATAL CARE SERVICES,Postnatal care services,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Postnatal care services,TRUE,FALSE,TRUE,FALSE
+POSTNATAL CARE SERVICES,Specialized PNC,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Specialized PNC,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Barium Meal,Diagnostic Services,Radiology Services,Barium Meal,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,CT scans,Diagnostic Services,Radiology Services,CT scans,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Echocardiography,Diagnostic Services,Radiology Services,Echocardiography,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,General Radiography services,Diagnostic Services,Radiology Services,General Radiography services,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Interventional Radiology,Diagnostic Services,Radiology Services,Interventional Radiology,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,MRI,Diagnostic Services,Radiology Services,MRI,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Mammography,Diagnostic Services,Radiology Services,Mammography,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Nuclear Medicine,Diagnostic Services,Radiology Services,Nuclear Medicine,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,PET Scan,Diagnostic Services,Radiology Services,PET Scan,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Specialised  Radiography Services,Diagnostic Services,Radiology Services,Specialised  Radiography Services,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Specialised X-Ray,Diagnostic Services,Radiology Services,Specialised X-Ray,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Ultrasound Services,Diagnostic Services,Radiology Services,Ultrasound Services,TRUE,FALSE,TRUE,FALSE
+RADIOLOGY AND IMAGING,Utra-Sound,Diagnostic Services,Radiology Services,Utra-Sound,TRUE,FALSE,TRUE,FALSE
+REHABILITATION SERVICES,Othorpaedic basic services,Clinical Services,General Clinical Services,Othorpaedic basic services,TRUE,FALSE,TRUE,FALSE
+RENAL SERVICES,Dialysis,Clinical Services,General Clinical Services,Dialysis,TRUE,FALSE,TRUE,FALSE
+RENAL SERVICES,Renal services,Clinical Services,General Clinical Services,Renal services,TRUE,FALSE,TRUE,FALSE
+SERVICES FOR GENDER BASED VIOLENCE SURVIVORS,Basic Services for Gender Based Violence Survivors,Community & Preventive Health,Health Promotion and Disease Prevention,Basic Services for Gender Based Violence Survivors,TRUE,FALSE,TRUE,FALSE
+SERVICES FOR GENDER BASED VIOLENCE SURVIVORS,Basic Services for Gender Based Violence Survivors - Psychosocial Support \u0026Counselling,Community & Preventive Health,Health Promotion and Disease Prevention,Basic Services for Gender Based Violence Survivors - Psychosocial Support \u0026Counselling,TRUE,FALSE,TRUE,FALSE
+SERVICES FOR GENDER BASED VIOLENCE SURVIVORS,Comprehensive Services for Gender Based Violence Survivors - Forensic management,Community & Preventive Health,Health Promotion and Disease Prevention,Comprehensive Services for Gender Based Violence Survivors - Forensic management,TRUE,FALSE,TRUE,FALSE
+SERVICES FOR GENDER BASED VIOLENCE SURVIVORS,Comprehensive Services for Gender- Based- Violence Survivors,Community & Preventive Health,Health Promotion and Disease Prevention,Comprehensive Services for Gender- Based- Violence Survivors,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED IN-PATIENT SERVICES,HDU services,Clinical Services,General Inpatient (IPD),HDU services,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED IN-PATIENT SERVICES,High Dependency Services,Clinical Services,General Inpatient (IPD),High Dependency Services,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED IN-PATIENT SERVICES,ICU service,Clinical Services,General Inpatient (IPD),ICU service,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,"Ear, Nose and Throat Services",Clinical Services,General Clinical Services,"Ear, Nose and Throat Services",TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Gynaecology out-patient clinic,Clinical Services,General Clinical Services,Gynaecology out-patient clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Medical Outpatient Clinic,Clinical Services,General Clinical Services,Medical Outpatient Clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Opthamology,Clinical Services,General Clinical Services,Opthamology,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Orthopedic clinic,Clinical Services,General Clinical Services,Orthopedic clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Paediatric outpatient clinic,Clinical Services,General Clinical Services,Paediatric outpatient clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Psychiatric clinic,Clinical Services,General Clinical Services,Psychiatric clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Skin clinic,Clinical Services,General Clinical Services,Skin clinic,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Surgical,Clinical Services,General Clinical Services,Surgical,TRUE,FALSE,TRUE,FALSE
+SPECIALIZED OUTPATIENTS CLINIC,Surgical outpatient clinic,Clinical Services,General Clinical Services,Surgical outpatient clinic,TRUE,FALSE,TRUE,FALSE
+STAND ALONE FACILITY REGULATION,Kenya Medical Laboratory Technicians \u0026 Technologists Board,Support Services,Support Services,Kenya Medical Laboratory Technicians \u0026 Technologists Board,FALSE,FALSE,FALSE,FALSE
+STAND ALONE FACILITY REGULATION,Nutrition and Dietetics Board,Support Services,Support Services,Nutrition and Dietetics Board,FALSE,FALSE,FALSE,FALSE
+STAND ALONE FACILITY REGULATION,PHARMACY AND POISONS BOARD,Support Services,Support Services,PHARMACY AND POISONS BOARD,FALSE,FALSE,FALSE,FALSE
+STAND ALONE FACILITY REGULATION,Physiotherapist board,Support Services,Support Services,Physiotherapist board,FALSE,FALSE,FALSE,FALSE
+THEATRE SERVICES,Eye theatre,Clinical Services,Surgical Services,Eye theatre,TRUE,FALSE,TRUE,FALSE
+THEATRE SERVICES,General Theatre Services,Clinical Services,Surgical Services,General Theatre Services,TRUE,FALSE,TRUE,FALSE
+THEATRE SERVICES,Major Theatre Services,Clinical Services,Surgical Services,Major Theatre Services,TRUE,FALSE,TRUE,FALSE
+THEATRE SERVICES,Maternity Services,Clinical Services,Surgical Services,Maternity Services,TRUE,FALSE,TRUE,FALSE
+THEATRE SERVICES,Minor Theatre Services,Clinical Services,Surgical Services,Minor Theatre Services,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Fine Needle Aspiration,Clinical Services,TB Services,Fine Needle Aspiration,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Gene expert,Clinical Services,TB Services,Gene expert,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,GeneXpert,Clinical Services,TB Services,GeneXpert,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Smear Microscopy,Clinical Services,TB Services,Smear Microscopy,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Smear microscopy \u0026 X ray,Clinical Services,TB Services,Smear microscopy \u0026 X ray,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Tuberculosis Culture,Clinical Services,TB Services,Tuberculosis Culture,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,X-Ray,Clinical Services,TB Services,X-Ray,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS DIAGNOSIS,Xray,Clinical Services,TB Services,Xray,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS TREATMENTS,Multi-Drug Resistant Tuberculosis Treatment,Clinical Services,TB Services,Multi-Drug Resistant Tuberculosis Treatment,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS TREATMENTS,TB treatment,Clinical Services,TB Services,TB treatment,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS TREATMENTS,Tuberculosis Treatment,Clinical Services,TB Services,Tuberculosis Treatment,TRUE,FALSE,TRUE,FALSE
+TUBERCULOSIS TREATMENTS,Tuberculosis treatment,Clinical Services,TB Services,Tuberculosis treatment,TRUE,FALSE,TRUE,FALSE
+YOUTH FRIENDLY SERVICES,Basic YFS-service to the youth offered alongside other services,Community & Preventive Health,Health Promotion and Disease Prevention,Basic YFS-service to the youth offered alongside other services,TRUE,FALSE,TRUE,FALSE
+YOUTH FRIENDLY SERVICES,Comprehensive YFS-separate Building (youth centre) with Recreation Facilities,Community & Preventive Health,Health Promotion and Disease Prevention,Comprehensive YFS-separate Building (youth centre) with Recreation Facilities,TRUE,FALSE,TRUE,FALSE
+YOUTH FRIENDLY SERVICES,Youth - Friendly Services,Community & Preventive Health,Health Promotion and Disease Prevention,Youth - Friendly Services,TRUE,FALSE,TRUE,FALSE

@@ -130,3 +130,23 @@ botswana:
   open_date_column: null
   catchment_population_column: null
   urban_rural_strata_column: null
+
+kenya:
+  raw_file: data/raw/kenya/Kenya_KMHFR_2026.csv
+  data_source: "Kenya Master Health Facility Registry (KMHFR) 2026"
+  facility_name_column: facility_name
+  facility_code_column: facility_code
+  admin1_column: admin1
+  admin2_column: null
+  admin3_column: null
+  admin4_column: null
+  zone_column: null
+  facility_type_column: facility_type
+  facility_ownership_column: facility_ownership
+  ownership_detail_column: null
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: status
+  open_date_column: null
+  catchment_population_column: null
+  urban_rural_strata_column: null

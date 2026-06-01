@@ -22,7 +22,8 @@ library(malariaAtlas)
   zambia   = list(lat_min = -19, lat_max = -7,  lon_min = 21, lon_max = 35),
   malawi   = list(lat_min = -18, lat_max = -8,  lon_min = 32, lon_max = 37),
   nigeria  = list(lat_min =   3, lat_max = 15,  lon_min =  2, lon_max = 16),
-  botswana = list(lat_min = -28, lat_max = -17, lon_min = 19, lon_max = 30)
+  botswana = list(lat_min = -28, lat_max = -17, lon_min = 19, lon_max = 30),
+  kenya    = list(lat_min =  -5, lat_max =  6,  lon_min = 33, lon_max = 42)
 )
 
 clean_coordinates <- function(df, country = NULL) {

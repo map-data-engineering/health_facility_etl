@@ -1,0 +1,71 @@
+AfyaScope — Kenya Services Standardisation Report
+Generated       : 2026-06-01 16:28:53.228241
+Pipeline version: 2.0
+
+--- Row counts ---
+Total records        : 201259
+Unique facilities    : 13887
+Matched facility_uid : 197926 (98.3%)
+Unmatched uid        : 3333
+include_in_analysis  : 182235
+needs_review TRUE    : 0
+
+--- Domain distribution ---
+  Reproductive & Maternal Health      51531 (25.6%)
+  Clinical Services                   44748 (22.2%)
+  HIV/AIDS Services                   37054 (18.4%)
+  Community & Preventive Health       33738 (16.8%)
+  Diagnostic Services                 15332 (7.6%)
+  Support Services                    8026 (4.0%)
+
+--- Unmatched crosswalk rows ---
+  34659 | TT toxoid for Pregnant Women
+  34659 | TD for Pregnant Women
+  34659 | Basic Mortuary Services
+  34659 | Comprehensive Mortuary Services
+  34659 | Ophthalmic services
+  34659 | Basic Physiotherapy
+  34659 | Specialised Physiotherapy
+  34659 | Basic Occupational Therapy-all
+  34659 | Specialised Occupational Therapy - includes paediatric
+  34659 | Othorpaedic basic services
+  34659 | Renal services
+  34659 | Dialysis
+  34659 | High depedency Services
+  34659 | ICU services
+  34659 | Basic Emergency Preparedness -Advanced  Life Support
+  34659 | Comprehensive Emergency Preparedness -Basic Life Support
+  34659 | Focused Antenatal Care
+  34659 | Specialised ANC -high risk pregnancy
+  34659 | Basic Obstetric Care (BMOC)
+  34659 | Comprehensive Maternity Obstetric Care (CeMOC)
+  34659 | HIV treatment and care
+  34659 | General Outpatient
+  34659 | Inpatient
+  34659 | Specialized Orthopaedic Technology Service
+  34659 | Orthopaedic Basic Services
+  34659 | Accident and Emergency casualty Services
+  34659 | General Emergency Services
+  34659 | General Emergency  Services
+  34659 | Basic Eye Care
+  34659 | Minor Theatre Services
+  34659 | Major Theatre Services
+  34659 | New born Care Service
+  34659 | Basic- Perform basic neonatal resuscitation
+  34659 | HIV Counselling \u0026 Testing
+  34659 | Condom Distribution \u0026 STI Prevention
+  34659 | Postnatal care services
+  34659 | Specialized PNC
+  34659 | Basic Services for Gender Based Violence Survivors
+  34659 | Comprehensive Services for Gender- Based- Violence Survivors
+  34659 | Basic Services for Gender Based Violence Survivors - Psychosocial Support \u0026Counselling
+  34659 | Tuberculosis Treatment
+  34659 | Multi-Drug Resistant Tuberculosis Treatment
+  34659 | TB treatment
+  34659 | Tuberculosis treatment
+  34659 | Facility offering Blood Transfusion Service
+  34659 | Total Parental Nutrition
+  34659 | Multiple Micronutrients
+  34659 | Integrated Management of Acute Malnutrition
+  34659 | Therapeutic feeding Program
+  34659 | Supplemental Feeding Program

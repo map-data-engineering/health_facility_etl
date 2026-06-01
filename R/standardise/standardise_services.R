@@ -69,9 +69,29 @@ SERVICE_CONFIG <- list(
     source_category_id  = "service_category",
     source_service_name = "service_name",
     date_col            = NULL
+  ),
+
+  KEN = list(
+    country_name   = "Kenya",
+    raw_path       = "data/raw/kenya/kenya_services_raw.csv",
+    crosswalk_path = "crosswalks/ken_services_crosswalk.csv",
+    # Raw services file is the long-format (facility_code,
+    # service_category, service_group, service_detail) extract
+    # from the KMHFR. Two-key join because the same detail name
+    # can appear under different categories. See
+    # scripts/extraction/extract_kenya.R and
+    # scripts/extraction/build_kenya_crosswalk.R.
+    join_keys      = c("service_category" = "source_category",
+                       "service_detail"   = "source_service_name"),
+    source_service_id   = NULL,
+    source_type_id      = NULL,
+    source_category_id  = "service_category",
+    source_service_name = "service_detail",
+    date_col            = NULL
   )
 
   # ── Add future countries here ──────────────────────────────
+  # OLD KENYA STUB (now replaced by the KEN block above):
   # KEN = list(
   #   country_name   = "Kenya",
   #   raw_path       = "data/raw/kenya/ken_services.csv",
@@ -105,6 +125,12 @@ standardise_services <- function(
               country_iso, cfg$raw_path))
   raw <- read_csv(cfg$raw_path, show_col_types = FALSE,
                   locale = locale(encoding = "UTF-8"))
+  # Force facility_code to character — the uid_registry stores it as
+  # text and readr will otherwise infer purely-numeric codes (KEN)
+  # as <double>, which breaks the registry join further down.
+  if ("facility_code" %in% names(raw)) {
+    raw$facility_code <- as.character(raw$facility_code)
+  }
   cat(sprintf("[%s services] Raw rows: %d | Unique facilities: %d\n",
               country_iso, nrow(raw),
               length(unique(raw$facility_code))))
