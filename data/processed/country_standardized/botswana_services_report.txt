@@ -1,0 +1,22 @@
+AfyaScope — Botswana Services Standardisation Report
+Generated       : 2026-06-01 14:51:12.51393
+Pipeline version: 2.0
+
+--- Row counts ---
+Total records        : 23828
+Unique facilities    : 1075
+Matched facility_uid : 23679 (99.4%)
+Unmatched uid        : 149
+include_in_analysis  : 15212
+needs_review TRUE    : 821
+
+--- Domain distribution ---
+  Support Services                    8616 (36.2%)
+  Clinical Services                   6728 (28.2%)
+  Community & Preventive Health       3305 (13.9%)
+  Reproductive & Maternal Health      2383 (10.0%)
+  Diagnostic Services                 1575 (6.6%)
+  HIV/AIDS Services                   1221 (5.1%)
+
+--- Unmatched crosswalk rows ---
+  None

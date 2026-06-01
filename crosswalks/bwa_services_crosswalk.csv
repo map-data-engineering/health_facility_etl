@@ -1,0 +1,288 @@
+source_category,source_service_name,service_domain,service_group,service_name,is_clinical,is_malaria_related,include_in_analysis,needs_review
+clinical_services,Accident And Emergency,Clinical Services,Emergency Services,Accident and Emergency,TRUE,FALSE,TRUE,FALSE
+clinical_services,Addiction Management,Clinical Services,General Clinical Services,Addiction Management,TRUE,FALSE,TRUE,FALSE
+clinical_services,Admissions For General Patients,Clinical Services,General Inpatient (IPD),General Inpatient Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Aesthetics,Clinical Services,General Clinical Services,Aesthetics,TRUE,FALSE,TRUE,TRUE
+clinical_services,Ambulance Service,Clinical Services,Emergency Services,Ambulance Service,TRUE,FALSE,TRUE,FALSE
+clinical_services,Anesthesiology,Clinical Services,Surgical Services,Anesthesiology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Ante Natal Care,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Antenatal Care (ANC),TRUE,FALSE,TRUE,FALSE
+clinical_services,Anti-Retroviral Therapy,HIV/AIDS Services,HIV/AIDS Care and Treatment,Antiretroviral Therapy (ART),TRUE,FALSE,TRUE,FALSE
+clinical_services,Athroplasty,Clinical Services,Surgical Services,Arthroplasty,TRUE,FALSE,TRUE,FALSE
+clinical_services,Audiology,Diagnostic Services,Diagnostic Services,Audiology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Aviation Medical Examiner,Clinical Services,General Clinical Services,Aviation Medical Examination,TRUE,FALSE,TRUE,TRUE
+clinical_services,Blood Donation,Community & Preventive Health,Health Promotion and Disease Prevention,Blood Donation,TRUE,FALSE,TRUE,FALSE
+clinical_services,Blood Pressure Monitoring,Community & Preventive Health,Health Promotion and Disease Prevention,Blood Pressure Monitoring,TRUE,FALSE,TRUE,FALSE
+clinical_services,Cancer Screening,Diagnostic Services,Diagnostic Services,Cancer Screening,TRUE,FALSE,TRUE,FALSE
+clinical_services,Cardiology,Clinical Services,General Clinical Services,Cardiology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Cervical Cancer Clinic,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Cervical Cancer Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Cervical Cancer Screening,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Cervical Cancer Screening,TRUE,FALSE,TRUE,FALSE
+clinical_services,Child Welfare Clinic,Community & Preventive Health,Growth Monitoring & Nutrition,Child Welfare Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Chiropractic,Clinical Services,General Clinical Services,Chiropractic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Cholesterol and Diabetes Screening,Diagnostic Services,Diagnostic Services,Cholesterol and Diabetes Screening,TRUE,FALSE,TRUE,FALSE
+clinical_services,Chronic patient care,Clinical Services,General Clinical Services,Chronic Patient Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Clinical Exercise Therapy,Clinical Services,General Clinical Services,Clinical Exercise Therapy,TRUE,FALSE,TRUE,FALSE
+clinical_services,Clinical Social Work,Support Services,Support Services,Clinical Social Work,FALSE,FALSE,FALSE,FALSE
+clinical_services,Community Home Based Care (CHBC),Community & Preventive Health,Health Promotion and Disease Prevention,Community Home Based Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Condom Distribution,Community & Preventive Health,Health Promotion and Disease Prevention,Condom Distribution,TRUE,FALSE,TRUE,FALSE
+clinical_services,Consultant Physician,Clinical Services,General Clinical Services,Consultant Physician,TRUE,FALSE,TRUE,FALSE
+clinical_services,Corporate Health and Wellness,Clinical Services,General Clinical Services,Corporate Health and Wellness,TRUE,FALSE,TRUE,TRUE
+clinical_services,Cross Border Services,Community & Preventive Health,Health Promotion and Disease Prevention,Cross Border Services,TRUE,FALSE,TRUE,TRUE
+clinical_services,Dental,Clinical Services,General Clinical Services,Dental Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Dermatology,Clinical Services,General Clinical Services,Dermatology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Diabetic Center,Clinical Services,General Clinical Services,Diabetic Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Diagnostic,Diagnostic Services,Diagnostic Services,Diagnostic Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Diagnostic Imaging Services,Diagnostic Services,Radiology Services,Diagnostic Imaging,TRUE,FALSE,TRUE,FALSE
+clinical_services,Diagnostic Regents,Support Services,Commodities and Supplies,Diagnostic Reagents,FALSE,FALSE,FALSE,FALSE
+clinical_services,Dietetics,Clinical Services,General Clinical Services,Dietetics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Dispensary,Support Services,Therapeutics and Pharmacy,Dispensary,FALSE,FALSE,FALSE,FALSE
+clinical_services,Domiciliary,Clinical Services,General Clinical Services,Domiciliary Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Dressings And Injection,Clinical Services,General Clinical Services,Dressings and Injections,TRUE,FALSE,TRUE,FALSE
+clinical_services,E-Consulatncy,Clinical Services,General Clinical Services,E-Consultancy,TRUE,FALSE,TRUE,TRUE
+clinical_services,Ear Nose Throat,Clinical Services,ENT Services,Ear Nose and Throat,TRUE,FALSE,TRUE,FALSE
+clinical_services,Echocardiogram,Diagnostic Services,Diagnostic Services,Echocardiogram,TRUE,FALSE,TRUE,FALSE
+clinical_services,Electrocardiogram,Diagnostic Services,Diagnostic Services,Electrocardiogram (ECG),TRUE,FALSE,TRUE,FALSE
+clinical_services,Emergency Medical Services,Clinical Services,Emergency Services,Emergency Medical Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Emergency Obstetric Care,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Emergency Obstetric Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Endocrinology,Clinical Services,General Clinical Services,Endocrinology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Expanded Program on Immunizations,Community & Preventive Health,Immunisation/Vaccination,Expanded Programme on Immunization (EPI),TRUE,FALSE,TRUE,FALSE
+clinical_services,Eye Clinic,Clinical Services,General Clinical Services,Eye Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Failure Clinic,Clinical Services,General Clinical Services,Failure Clinic,TRUE,FALSE,TRUE,TRUE
+clinical_services,Family Physician Services,Clinical Services,General Clinical Services,Family Physician Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Gastroenterology,Clinical Services,General Clinical Services,Gastroenterology,TRUE,FALSE,TRUE,FALSE
+clinical_services,General Consultation,Clinical Services,General Clinical Services,General Consultation,TRUE,FALSE,TRUE,FALSE
+clinical_services,General Counselling,Clinical Services,General Clinical Services,General Counselling,TRUE,FALSE,TRUE,FALSE
+clinical_services,General Practice,Clinical Services,General Clinical Services,General Practice,TRUE,FALSE,TRUE,FALSE
+clinical_services,General Screening,Diagnostic Services,Diagnostic Services,General Screening,TRUE,FALSE,TRUE,FALSE
+clinical_services,Gynaecology,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Gynaecology,TRUE,FALSE,TRUE,FALSE
+clinical_services,HIV Reference,HIV/AIDS Services,HIV/AIDS Services,HIV Reference,TRUE,FALSE,TRUE,TRUE
+clinical_services,HIV Testing and Counselling,HIV/AIDS Services,HIV Testing & Counselling,HIV Testing and Counselling,TRUE,FALSE,TRUE,FALSE
+clinical_services,Hand Surgery,Clinical Services,Surgical Services,Hand Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Hepatobiliary surgery,Clinical Services,Surgical Services,Hepatobiliary Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Hip and Knee Arthroplasty,Clinical Services,Surgical Services,Hip and Knee Arthroplasty,TRUE,FALSE,TRUE,FALSE
+clinical_services,Holter,Diagnostic Services,Diagnostic Services,Holter Monitoring,TRUE,FALSE,TRUE,FALSE
+clinical_services,Home Visits,Community & Preventive Health,Health Promotion and Disease Prevention,Home Visits,TRUE,FALSE,TRUE,FALSE
+clinical_services,Immunization,Community & Preventive Health,Immunisation/Vaccination,Immunization,TRUE,FALSE,TRUE,FALSE
+clinical_services,Implantology,Clinical Services,Surgical Services,Implantology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Infectious Disease Control Centre,Clinical Services,General Clinical Services,Infectious Disease Control,TRUE,FALSE,TRUE,FALSE
+clinical_services,Inpatient Care Services,Clinical Services,General Inpatient (IPD),Inpatient Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Integrated Management of Childhood Illnesses,Community & Preventive Health,Growth Monitoring & Nutrition,IMCI - Integrated Management of Childhood Illnesses,TRUE,FALSE,TRUE,FALSE
+clinical_services,Intensive Care,Clinical Services,Emergency Services,Intensive Care Unit,TRUE,FALSE,TRUE,FALSE
+clinical_services,Internal Medicine,Clinical Services,General Clinical Services,Internal Medicine,TRUE,FALSE,TRUE,FALSE
+clinical_services,Internal Medicine including Spirometry,Clinical Services,General Clinical Services,Internal Medicine (with Spirometry),TRUE,FALSE,TRUE,FALSE
+clinical_services,Laboratory,Diagnostic Services,Diagnostic Services,Laboratory,TRUE,FALSE,TRUE,FALSE
+clinical_services,Labour And Delivery,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Labour and Delivery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Loop Electrosurgical excision Procedure,Reproductive & Maternal Health,Reproductive & Maternal Health Services,LEEP - Loop Electrosurgical Excision Procedure,TRUE,FALSE,TRUE,FALSE
+clinical_services,Marketing of  ethical pharmaceuticals,Support Services,Therapeutics and Pharmacy,Pharmaceutical Marketing,FALSE,FALSE,FALSE,FALSE
+clinical_services,Maternity,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Maternity,TRUE,FALSE,TRUE,FALSE
+clinical_services,Maxilo-Facial And Oral Surgery,Clinical Services,Surgical Services,Maxillofacial and Oral Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Medical Aid schemes,Support Services,Support Services,Medical Aid Schemes,FALSE,FALSE,FALSE,FALSE
+clinical_services,Medical Equipment Management Services,Support Services,Equipment and Infrastructure,Medical Equipment Management,FALSE,FALSE,FALSE,FALSE
+clinical_services,Medical Examinations,Clinical Services,General Clinical Services,Medical Examinations,TRUE,FALSE,TRUE,FALSE
+clinical_services,Medical equipment and supplies,Support Services,Commodities and Supplies,Medical Equipment and Supplies,FALSE,FALSE,FALSE,FALSE
+clinical_services,Men's Clinic,Clinical Services,General Clinical Services,Men's Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Mental Health Services,Clinical Services,General Clinical Services,Mental Health Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Mobile Outreach,Community & Preventive Health,Health Promotion and Disease Prevention,Mobile Outreach,TRUE,FALSE,TRUE,FALSE
+clinical_services,Mortuary Services,Support Services,Support Services,Mortuary Services,FALSE,FALSE,FALSE,FALSE
+clinical_services,Multidrug-Resistant Tuberculosis Center,Clinical Services,TB Services,MDR-TB Centre,TRUE,FALSE,TRUE,FALSE
+clinical_services,Neonatal Care,Clinical Services,General Clinical Services,Neonatal Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Nephrology,Clinical Services,General Clinical Services,Nephrology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Nephrology Consultation,Clinical Services,General Clinical Services,Nephrology Consultation,TRUE,FALSE,TRUE,FALSE
+clinical_services,Neuro Surgery,Clinical Services,Surgical Services,Neurosurgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Neurology,Clinical Services,General Clinical Services,Neurology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Non Communicable Diseases Clinic,Clinical Services,General Clinical Services,Non-Communicable Diseases Clinic,TRUE,FALSE,TRUE,FALSE
+clinical_services,Occupational Health Services,Clinical Services,General Clinical Services,Occupational Health Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Occupational Therapy,Clinical Services,General Clinical Services,Occupational Therapy,TRUE,FALSE,TRUE,FALSE
+clinical_services,Oncology,Clinical Services,General Clinical Services,Oncology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Ophthalmology Consultations,Clinical Services,General Clinical Services,Ophthalmology Consultations,TRUE,FALSE,TRUE,FALSE
+clinical_services,Optometry,Clinical Services,General Clinical Services,Optometry,TRUE,FALSE,TRUE,FALSE
+clinical_services,Oral Health Services,Clinical Services,General Clinical Services,Oral Health Services,TRUE,FALSE,TRUE,FALSE
+clinical_services,Orthodontics,Clinical Services,General Clinical Services,Orthodontics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Orthopedic,Clinical Services,Surgical Services,Orthopaedics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Orthotics,Clinical Services,General Clinical Services,Orthotics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Outpatient Department,Clinical Services,General Clinical Services,Outpatient Department (OPD),TRUE,FALSE,TRUE,FALSE
+clinical_services,Paediatric Cardiology service,Clinical Services,General Clinical Services,Paediatric Cardiology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Pediatrics,Clinical Services,General Clinical Services,Paediatrics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Periordontics,Clinical Services,General Clinical Services,Periodontics,TRUE,FALSE,TRUE,FALSE
+clinical_services,Pharmacy,Support Services,Therapeutics and Pharmacy,Pharmacy,FALSE,FALSE,FALSE,FALSE
+clinical_services,Phlebotomy,Diagnostic Services,Diagnostic Services,Phlebotomy,TRUE,FALSE,TRUE,FALSE
+clinical_services,Physiatry,Clinical Services,General Clinical Services,Physiatry,TRUE,FALSE,TRUE,FALSE
+clinical_services,Physiotherapy,Clinical Services,General Clinical Services,Physiotherapy,TRUE,FALSE,TRUE,FALSE
+clinical_services,Plastic Surgery,Clinical Services,Surgical Services,Plastic Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Post Natal Care,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Postnatal Care (PNC),TRUE,FALSE,TRUE,FALSE
+clinical_services,Primary Health Care,Clinical Services,General Clinical Services,Primary Health Care,TRUE,FALSE,TRUE,FALSE
+clinical_services,Prostetics and Orthopaedic Technology,Clinical Services,General Clinical Services,Prosthetics and Orthopaedic Technology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Provision of pharmaceuticals,Support Services,Therapeutics and Pharmacy,Provision of Pharmaceuticals,FALSE,FALSE,FALSE,FALSE
+clinical_services,Psychiatry,Clinical Services,General Clinical Services,Psychiatry,TRUE,FALSE,TRUE,FALSE
+clinical_services,Psychology,Clinical Services,General Clinical Services,Psychology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Psychometric Assessments,Clinical Services,General Clinical Services,Psychometric Assessments,TRUE,FALSE,TRUE,FALSE
+clinical_services,Radiography,Diagnostic Services,Radiology Services,Radiography,TRUE,FALSE,TRUE,FALSE
+clinical_services,Refraction,Diagnostic Services,Diagnostic Services,Refraction,TRUE,FALSE,TRUE,FALSE
+clinical_services,Rehab and Fitness Gymnasium,Clinical Services,General Clinical Services,Rehabilitation and Fitness,TRUE,FALSE,TRUE,FALSE
+clinical_services,Rehabilitation,Clinical Services,General Clinical Services,Rehabilitation,TRUE,FALSE,TRUE,FALSE
+clinical_services,Rheumatology,Clinical Services,General Clinical Services,Rheumatology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Routine HIV Testing,HIV/AIDS Services,HIV Testing & Counselling,Routine HIV Testing,TRUE,FALSE,TRUE,FALSE
+clinical_services,School Education,Community & Preventive Health,Health Promotion and Disease Prevention,School Health Education,TRUE,FALSE,TRUE,FALSE
+clinical_services,School Health,Community & Preventive Health,Health Promotion and Disease Prevention,School Health,TRUE,FALSE,TRUE,FALSE
+clinical_services,See And Treat,Clinical Services,General Clinical Services,See and Treat,TRUE,FALSE,TRUE,FALSE
+clinical_services,Sexual Reproductive Health,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Sexual and Reproductive Health,TRUE,FALSE,TRUE,FALSE
+clinical_services,Social Protection Services,Support Services,Support Services,Social Protection Services,FALSE,FALSE,FALSE,FALSE
+clinical_services,Social Welfare,Support Services,Support Services,Social Welfare,FALSE,FALSE,FALSE,FALSE
+clinical_services,Social Work,Support Services,Support Services,Social Work,FALSE,FALSE,FALSE,FALSE
+clinical_services,Specialist Physician,Clinical Services,General Clinical Services,Specialist Physician,TRUE,FALSE,TRUE,FALSE
+clinical_services,Specialist Referrals,Support Services,Support Services,Specialist Referrals,FALSE,FALSE,FALSE,FALSE
+clinical_services,Speech Therapy,Clinical Services,General Clinical Services,Speech Therapy,TRUE,FALSE,TRUE,FALSE
+clinical_services,Spinal Surgery,Clinical Services,Surgical Services,Spinal Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Sports And Occupational Medicine,Clinical Services,General Clinical Services,Sports and Occupational Medicine,TRUE,FALSE,TRUE,FALSE
+clinical_services,Surgery,Clinical Services,Surgical Services,General Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Thoracic Surgery,Clinical Services,Surgical Services,Thoracic Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Tonometry,Diagnostic Services,Diagnostic Services,Tonometry,TRUE,FALSE,TRUE,FALSE
+clinical_services,Travel Medicine,Community & Preventive Health,Health Promotion and Disease Prevention,Travel Medicine,TRUE,FALSE,TRUE,FALSE
+clinical_services,Treadmill Test,Diagnostic Services,Diagnostic Services,Treadmill (Stress) Test,TRUE,FALSE,TRUE,FALSE
+clinical_services,Tuberculosis,Clinical Services,TB Services,Tuberculosis,TRUE,FALSE,TRUE,FALSE
+clinical_services,Ultrasound Scan,Diagnostic Services,Radiology Services,Ultrasound,TRUE,FALSE,TRUE,FALSE
+clinical_services,Urology,Clinical Services,Surgical Services,Urology,TRUE,FALSE,TRUE,FALSE
+clinical_services,Vascular Surgery,Clinical Services,Surgical Services,Vascular Surgery,TRUE,FALSE,TRUE,FALSE
+clinical_services,Woman Wellness,Reproductive & Maternal Health,Reproductive & Maternal Health Services,Women's Wellness,TRUE,FALSE,TRUE,FALSE
+clinical_services,X-Ray,Diagnostic Services,Radiology Services,X-Ray,TRUE,FALSE,TRUE,FALSE
+clinical_services,Youth Friendly Services,Community & Preventive Health,Health Promotion and Disease Prevention,Youth Friendly Services,TRUE,FALSE,TRUE,FALSE
+infrastructure,Air handling Units,Support Services,Equipment and Infrastructure,Air Handling Units,FALSE,FALSE,FALSE,FALSE
+infrastructure,Ambulances,Support Services,Equipment and Infrastructure,Ambulances,FALSE,FALSE,FALSE,FALSE
+infrastructure,Backup generator,Support Services,Equipment and Infrastructure,Backup Generator,FALSE,FALSE,FALSE,FALSE
+infrastructure,Bed Capacity,Support Services,Equipment and Infrastructure,Bed Capacity,FALSE,FALSE,FALSE,FALSE
+infrastructure,Boilers,Support Services,Equipment and Infrastructure,Boilers,FALSE,FALSE,FALSE,FALSE
+infrastructure,Cafeteria,Support Services,Equipment and Infrastructure,Cafeteria,FALSE,FALSE,FALSE,FALSE
+infrastructure,Centrifugal Pumps,Support Services,Equipment and Infrastructure,Centrifugal Pumps,FALSE,FALSE,FALSE,FALSE
+infrastructure,Chain chiller type,Support Services,Equipment and Infrastructure,Chiller (Chain Type),FALSE,FALSE,FALSE,FALSE
+infrastructure,Chillers,Support Services,Equipment and Infrastructure,Chillers,FALSE,FALSE,FALSE,FALSE
+infrastructure,Coldrooms,Support Services,Equipment and Infrastructure,Cold Rooms,FALSE,FALSE,FALSE,FALSE
+infrastructure,Dryer,Support Services,Equipment and Infrastructure,Dryer,FALSE,FALSE,FALSE,FALSE
+infrastructure,Electricity,Support Services,Equipment and Infrastructure,Electricity,FALSE,FALSE,FALSE,FALSE
+infrastructure,Elevator,Support Services,Equipment and Infrastructure,Elevator,FALSE,FALSE,FALSE,FALSE
+infrastructure,Fighting Equipment tank,Support Services,Equipment and Infrastructure,Firefighting Equipment Tank,FALSE,FALSE,FALSE,FALSE
+infrastructure,Fire Engine,Support Services,Equipment and Infrastructure,Fire Engine,FALSE,FALSE,FALSE,FALSE
+infrastructure,Fire Pump,Support Services,Equipment and Infrastructure,Fire Pump,FALSE,FALSE,FALSE,FALSE
+infrastructure,Freezer rooms,Support Services,Equipment and Infrastructure,Freezer Rooms,FALSE,FALSE,FALSE,FALSE
+infrastructure,Heat exchangers,Support Services,Equipment and Infrastructure,Heat Exchangers,FALSE,FALSE,FALSE,FALSE
+infrastructure,Hot water heating pumps,Support Services,Equipment and Infrastructure,Hot Water Heating Pumps,FALSE,FALSE,FALSE,FALSE
+infrastructure,Internet,Support Services,Equipment and Infrastructure,Internet,FALSE,FALSE,FALSE,FALSE
+infrastructure,Laboratory,Support Services,Equipment and Infrastructure,Laboratory (Facility),FALSE,FALSE,FALSE,FALSE
+infrastructure,Mortuary Units,Support Services,Equipment and Infrastructure,Mortuary Units,FALSE,FALSE,FALSE,FALSE
+infrastructure,Muncher,Support Services,Equipment and Infrastructure,Muncher,FALSE,FALSE,FALSE,FALSE
+infrastructure,Pharmacy,Support Services,Equipment and Infrastructure,Pharmacy (Facility),FALSE,FALSE,FALSE,FALSE
+infrastructure,Presser Iron,Support Services,Equipment and Infrastructure,Presser Iron,FALSE,FALSE,FALSE,FALSE
+infrastructure,Public Wi-fi,Support Services,Equipment and Infrastructure,Public Wi-Fi,FALSE,FALSE,FALSE,FALSE
+infrastructure,Roller Iron,Support Services,Equipment and Infrastructure,Roller Iron,FALSE,FALSE,FALSE,FALSE
+infrastructure,Running Water,Support Services,Equipment and Infrastructure,Running Water,FALSE,FALSE,FALSE,FALSE
+infrastructure,Sewerage pump,Support Services,Equipment and Infrastructure,Sewerage Pump,FALSE,FALSE,FALSE,FALSE
+infrastructure,Stoves,Support Services,Equipment and Infrastructure,Stoves,FALSE,FALSE,FALSE,FALSE
+infrastructure,Toilets,Support Services,Equipment and Infrastructure,Toilets,FALSE,FALSE,FALSE,FALSE
+infrastructure,Transformer,Support Services,Equipment and Infrastructure,Transformer,FALSE,FALSE,FALSE,FALSE
+infrastructure,Ultrasound Machine,Support Services,Equipment and Infrastructure,Ultrasound Machine,FALSE,FALSE,FALSE,FALSE
+infrastructure,Vehicles,Support Services,Equipment and Infrastructure,Vehicles,FALSE,FALSE,FALSE,FALSE
+infrastructure,Washing Machines,Support Services,Equipment and Infrastructure,Washing Machines,FALSE,FALSE,FALSE,FALSE
+infrastructure,Weighing scale,Support Services,Equipment and Infrastructure,Weighing Scale,FALSE,FALSE,FALSE,FALSE
+infrastructure,X-Ray Machine,Support Services,Equipment and Infrastructure,X-Ray Machine,FALSE,FALSE,FALSE,FALSE
+infrastructure,sluice machines,Support Services,Equipment and Infrastructure,Sluice Machines,FALSE,FALSE,FALSE,FALSE
+infrastructure,water tanks,Support Services,Equipment and Infrastructure,Water Tanks,FALSE,FALSE,FALSE,FALSE
+staff,ANO,Support Services,Staff Cadres,Advanced Nursing Officer,FALSE,FALSE,FALSE,TRUE
+staff,Aesthetician,Support Services,Staff Cadres,Aesthetician,FALSE,FALSE,FALSE,FALSE
+staff,Anaesthesiologist,Support Services,Staff Cadres,Anaesthesiologist,FALSE,FALSE,FALSE,FALSE
+staff,Anaesthetic Nurses,Support Services,Staff Cadres,Anaesthetic Nurses,FALSE,FALSE,FALSE,FALSE
+staff,Anaesthiology,Support Services,Staff Cadres,Anaesthesiology Staff,FALSE,FALSE,FALSE,FALSE
+staff,Assistant Physiotherapist,Support Services,Staff Cadres,Assistant Physiotherapist,FALSE,FALSE,FALSE,FALSE
+staff,Audilogist,Support Services,Staff Cadres,Audiologist,FALSE,FALSE,FALSE,FALSE
+staff,Audiologist,Support Services,Staff Cadres,Audiologist,FALSE,FALSE,FALSE,FALSE
+staff,Aviation Medical Examiner,Support Services,Staff Cadres,Aviation Medical Examiner,FALSE,FALSE,FALSE,FALSE
+staff,Beauty Therapist,Support Services,Staff Cadres,Beauty Therapist,FALSE,FALSE,FALSE,FALSE
+staff,Biokineticist,Support Services,Staff Cadres,Biokineticist,FALSE,FALSE,FALSE,FALSE
+staff,CNO,Support Services,Staff Cadres,Chief Nursing Officer,FALSE,FALSE,FALSE,TRUE
+staff,CRN,Support Services,Staff Cadres,Charge Registered Nurse,FALSE,FALSE,FALSE,TRUE
+staff,Cardiologist,Support Services,Staff Cadres,Cardiologist,FALSE,FALSE,FALSE,FALSE
+staff,Cardiothorasic Surgeon,Support Services,Staff Cadres,Cardiothoracic Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Chiropractor,Support Services,Staff Cadres,Chiropractor,FALSE,FALSE,FALSE,FALSE
+staff,Cleaner,Support Services,Staff Cadres,Cleaner,FALSE,FALSE,FALSE,FALSE
+staff,Clinical Officer,Support Services,Staff Cadres,Clinical Officer,FALSE,FALSE,FALSE,FALSE
+staff,Community Health Nurses,Support Services,Staff Cadres,Community Health Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Counsellor,Support Services,Staff Cadres,Counsellor,FALSE,FALSE,FALSE,FALSE
+staff,Dental Surgery Assistant,Support Services,Staff Cadres,Dental Surgery Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Dental Technician,Support Services,Staff Cadres,Dental Technician,FALSE,FALSE,FALSE,FALSE
+staff,Dental Therapist,Support Services,Staff Cadres,Dental Therapist,FALSE,FALSE,FALSE,FALSE
+staff,Dentist,Support Services,Staff Cadres,Dentist,FALSE,FALSE,FALSE,FALSE
+staff,Dermatologist,Support Services,Staff Cadres,Dermatologist,FALSE,FALSE,FALSE,FALSE
+staff,Dietecian,Support Services,Staff Cadres,Dietitian,FALSE,FALSE,FALSE,FALSE
+staff,Doctors,Support Services,Staff Cadres,Doctors,FALSE,FALSE,FALSE,FALSE
+staff,Driver,Support Services,Staff Cadres,Driver,FALSE,FALSE,FALSE,FALSE
+staff,ENT Surgeon,Support Services,Staff Cadres,ENT Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Endocrinologist,Support Services,Staff Cadres,Endocrinologist,FALSE,FALSE,FALSE,FALSE
+staff,Environmental Health Technician,Support Services,Staff Cadres,Environmental Health Technician,FALSE,FALSE,FALSE,FALSE
+staff,Eye Nurse,Support Services,Staff Cadres,Eye Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Family Doctor,Support Services,Staff Cadres,Family Doctor,FALSE,FALSE,FALSE,FALSE
+staff,Family Nurse Practitioner,Support Services,Staff Cadres,Family Nurse Practitioner,FALSE,FALSE,FALSE,FALSE
+staff,Family Physician,Support Services,Staff Cadres,Family Physician,FALSE,FALSE,FALSE,FALSE
+staff,Gastroenterologist,Support Services,Staff Cadres,Gastroenterologist,FALSE,FALSE,FALSE,FALSE
+staff,General Manager,Support Services,Staff Cadres,General Manager,FALSE,FALSE,FALSE,FALSE
+staff,General Practictioner,Support Services,Staff Cadres,General Practitioner,FALSE,FALSE,FALSE,FALSE
+staff,General Surgeon,Support Services,Staff Cadres,General Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Gynaecologist,Support Services,Staff Cadres,Gynaecologist,FALSE,FALSE,FALSE,FALSE
+staff,Health  Assistant,Support Services,Staff Cadres,Health Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Health Auxiliary,Support Services,Staff Cadres,Health Auxiliary,FALSE,FALSE,FALSE,FALSE
+staff,Health Education Assistant,Support Services,Staff Cadres,Health Education Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Health Information Manager,Support Services,Staff Cadres,Health Information Manager,FALSE,FALSE,FALSE,FALSE
+staff,Hematologist,Support Services,Staff Cadres,Haematologist,FALSE,FALSE,FALSE,FALSE
+staff,Intensivist,Support Services,Staff Cadres,Intensivist,FALSE,FALSE,FALSE,FALSE
+staff,Lab Technician,Support Services,Staff Cadres,Laboratory Technician,FALSE,FALSE,FALSE,FALSE
+staff,Laboratory Scientist,Support Services,Staff Cadres,Laboratory Scientist,FALSE,FALSE,FALSE,FALSE
+staff,Marketing,Support Services,Staff Cadres,Marketing Staff,FALSE,FALSE,FALSE,FALSE
+staff,Maxilofacial Surgeon,Support Services,Staff Cadres,Maxillofacial Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Medical Laboratory,Support Services,Staff Cadres,Medical Laboratory Staff,FALSE,FALSE,FALSE,FALSE
+staff,Midwifery,Support Services,Staff Cadres,Midwife,FALSE,FALSE,FALSE,FALSE
+staff,NS,Support Services,Staff Cadres,Nursing Staff,FALSE,FALSE,FALSE,TRUE
+staff,Nephrologist,Support Services,Staff Cadres,Nephrologist,FALSE,FALSE,FALSE,FALSE
+staff,Neurologist,Support Services,Staff Cadres,Neurologist,FALSE,FALSE,FALSE,FALSE
+staff,Nurse,Support Services,Staff Cadres,Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Nursing Officer 1,Support Services,Staff Cadres,Nursing Officer I,FALSE,FALSE,FALSE,FALSE
+staff,Nutritionist,Support Services,Staff Cadres,Nutritionist,FALSE,FALSE,FALSE,FALSE
+staff,Obstetrician,Support Services,Staff Cadres,Obstetrician,FALSE,FALSE,FALSE,FALSE
+staff,Occupational Therapists,Support Services,Staff Cadres,Occupational Therapist,FALSE,FALSE,FALSE,FALSE
+staff,Oncologist,Support Services,Staff Cadres,Oncologist,FALSE,FALSE,FALSE,FALSE
+staff,Oncology Nurses,Support Services,Staff Cadres,Oncology Nurses,FALSE,FALSE,FALSE,FALSE
+staff,Ophthalmology,Support Services,Staff Cadres,Ophthalmology Staff,FALSE,FALSE,FALSE,FALSE
+staff,Ophthamology Nurse,Support Services,Staff Cadres,Ophthalmology Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Optical Assistant,Support Services,Staff Cadres,Optical Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Optician,Support Services,Staff Cadres,Optician,FALSE,FALSE,FALSE,FALSE
+staff,Optometrist,Support Services,Staff Cadres,Optometrist,FALSE,FALSE,FALSE,FALSE
+staff,Optometrist Assistant,Support Services,Staff Cadres,Optometrist Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Orthodontist,Support Services,Staff Cadres,Orthodontist,FALSE,FALSE,FALSE,FALSE
+staff,Orthopedic Surgeon,Support Services,Staff Cadres,Orthopaedic Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,PNO,Support Services,Staff Cadres,Principal Nursing Officer,FALSE,FALSE,FALSE,TRUE
+staff,PNO II,Support Services,Staff Cadres,Principal Nursing Officer II,FALSE,FALSE,FALSE,TRUE
+staff,PRN,Support Services,Staff Cadres,Practising Registered Nurse,FALSE,FALSE,FALSE,TRUE
+staff,Peadiatricians,Support Services,Staff Cadres,Paediatrician,FALSE,FALSE,FALSE,FALSE
+staff,Personal Assistant/Receptionist,Support Services,Staff Cadres,Personal Assistant/Receptionist,FALSE,FALSE,FALSE,FALSE
+staff,Pharmacists,Support Services,Staff Cadres,Pharmacist,FALSE,FALSE,FALSE,FALSE
+staff,Pharmacy Assistant,Support Services,Staff Cadres,Pharmacy Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Pharmacy Technician,Support Services,Staff Cadres,Pharmacy Technician,FALSE,FALSE,FALSE,FALSE
+staff,Phlebotomist,Support Services,Staff Cadres,Phlebotomist,FALSE,FALSE,FALSE,FALSE
+staff,Physicians,Support Services,Staff Cadres,Physician,FALSE,FALSE,FALSE,FALSE
+staff,Physiotherapists,Support Services,Staff Cadres,Physiotherapist,FALSE,FALSE,FALSE,FALSE
+staff,Plastic Surgeon,Support Services,Staff Cadres,Plastic Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Psychiatic nurse,Support Services,Staff Cadres,Psychiatric Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Psychiatrist,Support Services,Staff Cadres,Psychiatrist,FALSE,FALSE,FALSE,FALSE
+staff,Psychologist,Support Services,Staff Cadres,Psychologist,FALSE,FALSE,FALSE,FALSE
+staff,Public Health Dentist,Support Services,Staff Cadres,Public Health Dentist,FALSE,FALSE,FALSE,FALSE
+staff,Radilogist,Support Services,Staff Cadres,Radiologist,FALSE,FALSE,FALSE,FALSE
+staff,Radiographers Sonographers,Support Services,Staff Cadres,Radiographer/Sonographer,FALSE,FALSE,FALSE,FALSE
+staff,Registered Nurse,Support Services,Staff Cadres,Registered Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Rehabilitation Technician,Support Services,Staff Cadres,Rehabilitation Technician,FALSE,FALSE,FALSE,FALSE
+staff,Rheumatologist,Support Services,Staff Cadres,Rheumatologist,FALSE,FALSE,FALSE,FALSE
+staff,SNO,Support Services,Staff Cadres,Senior Nursing Officer,FALSE,FALSE,FALSE,TRUE
+staff,SNO I,Support Services,Staff Cadres,Senior Nursing Officer I,FALSE,FALSE,FALSE,TRUE
+staff,Senior  Education Assistant,Support Services,Staff Cadres,Senior Education Assistant,FALSE,FALSE,FALSE,FALSE
+staff,Senior Registered Nurse,Support Services,Staff Cadres,Senior Registered Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Social Workers,Support Services,Staff Cadres,Social Worker,FALSE,FALSE,FALSE,FALSE
+staff,Speech And Language Therapist,Support Services,Staff Cadres,Speech and Language Therapist,FALSE,FALSE,FALSE,FALSE
+staff,Sports Medicine,Support Services,Staff Cadres,Sports Medicine Staff,FALSE,FALSE,FALSE,FALSE
+staff,Theatre nurse,Support Services,Staff Cadres,Theatre Nurse,FALSE,FALSE,FALSE,FALSE
+staff,Thoracic Surgeon,Support Services,Staff Cadres,Thoracic Surgeon,FALSE,FALSE,FALSE,FALSE
+staff,Travel Doctor,Support Services,Staff Cadres,Travel Doctor,FALSE,FALSE,FALSE,FALSE
+staff,Urologist,Support Services,Staff Cadres,Urologist,FALSE,FALSE,FALSE,FALSE

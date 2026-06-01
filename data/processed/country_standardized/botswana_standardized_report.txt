@@ -1,0 +1,49 @@
+HealthScape — Standardized Data Report
+Country      : Botswana
+Generated    : 2026-06-01 14:51:11.473004
+Rows         : 1071
+Columns      : 37
+
+Column completeness (% non-null):
+  facility_name                       100.0%
+  facility_code                       100.0%
+  Old Facility Code                    73.9%
+  admin1                               98.3%
+  Sub-District                         78.5%
+  Constituency                         85.2%
+  facility_type                       100.0%
+  latitude                            100.0%
+  longitude                           100.0%
+  Telephone                            99.3%
+  Urban or Rural                       82.1%
+  Always Open                         100.0%
+  status                              100.0%
+  Publication Status                  100.0%
+  Catchment Area                       42.5%
+  Updated                             100.0%
+  ownership                           100.0%
+  country                             100.0%
+  data_source                         100.0%
+  coordinate_valid                    100.0%
+  open_date                             0.0%
+  open_year                             0.0%
+  uid                                 100.0%
+  admin2                                0.0%
+  zone                                  0.0%
+  coordinate_source                     0.0%
+  ownership_detail                      0.0%
+  catchment_population                  0.0%
+  urban_rural_strata                    0.0%
+  inpatient                             0.0%
+  outpatient                            0.0%
+  maternity                             0.0%
+  emergency                             0.0%
+  laboratory                            0.0%
+  malaria_services                      0.0%
+  extraction_date                       0.0%
+  data_quality_flag                   100.0%
+
+Data quality flag distribution:
+
+high 
+1071 

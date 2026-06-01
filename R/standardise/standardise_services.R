@@ -52,8 +52,25 @@ SERVICE_CONFIG <- list(
     source_category_id  = "service_category_id",
     source_service_name = "service_name",
     date_col            = "created_date"  # ISO datetime column
+  ),
+
+  BWA = list(
+    country_name   = "Botswana",
+    raw_path       = "data/raw/botswana/botswana_services_raw.csv",
+    crosswalk_path = "crosswalks/bwa_services_crosswalk.csv",
+    # Raw file produced by scripts/extraction/extract_botswana.R
+    # (hits the Botswana MFL public client API). Two-key join
+    # because the same service_name can appear under different
+    # source categories (clinical_services / infrastructure / staff).
+    join_keys      = c("service_category" = "source_category",
+                       "service_name"     = "source_service_name"),
+    source_service_id   = NULL,
+    source_type_id      = NULL,
+    source_category_id  = "service_category",
+    source_service_name = "service_name",
+    date_col            = NULL
   )
-  
+
   # ── Add future countries here ──────────────────────────────
   # KEN = list(
   #   country_name   = "Kenya",

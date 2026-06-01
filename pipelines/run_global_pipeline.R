@@ -257,7 +257,7 @@ run_global_pipeline <- function(
     source("R/standardise/standardise_services.R")
     
     # Countries with service data — add new ISO codes here
-    service_countries <- c("TZA", "MWI")  # ← only change needed
+    service_countries <- c("TZA", "MWI", "BWA")  # ← only change needed
     
     svc_dfs <- list()
     for (iso in service_countries) {
