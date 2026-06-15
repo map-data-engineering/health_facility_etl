@@ -153,7 +153,7 @@ kenya:
 
 ethiopia:
   raw_file: data/raw/ethiopia/Ethiopia_HFR_2026.csv
-  data_source: "Ethiopia MoH Master Facility Registry (e-HFR), coordinates joined from HDX 2024"
+  data_source: "Ethiopia MoH Master Facility Registry v2 (https://mfrv2.moh.gov.et); coordinates joined from HDX/WHO AFRO 2024"
   facility_name_column: facility_name
   facility_code_column: facility_code
   admin1_column: admin1

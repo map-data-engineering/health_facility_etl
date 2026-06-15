@@ -2,17 +2,32 @@
 # extract_ethiopia.R
 # AfyaScope ETL — Extraction Layer (Ethiopia)
 #
-# Source: Ethiopia MoH Master Facility Registry (e-HFR)
-#   The portal team provided a CSV dump with 64K+ facilities,
-#   each with Region/Zone/Woreda and three semicolon-joined
-#   service lists. Crucially the source has NO GPS coordinates.
+# Source
+#   Ethiopia MoH Master Facility Registry, version 2 (MFR v2)
+#     https://mfrv2.moh.gov.et/#/facility/all
+#   The portal team supplies a CSV export from MFR v2's public
+#   Facility-All page, ~64K rows with Region/Zone/Woreda and
+#   four semicolon-joined service columns (Clinical / Diagnostic
+#   / Support / 24Hr). Crucially the public export has NO GPS
+#   coordinates.
 #
-# To get usable maps we join against HDX's
-#   "Ethiopian Health Facilities" (40,525 rows, all geolocated)
-#   on the shared numeric Facility ID. ~62% direct match.
-# Unmatched rows (mostly private clinics, drug stores,
-# pharmacies) are dropped further downstream by the standard
-# clean_coordinates step because they have no GPS.
+# Coordinate strategy
+#   MFR v2 internally carries lat/lng but the production API
+#   (https://mfr.moh.gov.et/api/Facility/GetFacilities) requires
+#   authentication (401 anonymous), so we can't query it.
+#   Instead we join against HDX's "Ethiopian Health Facilities"
+#   dataset — the WHO AFRO compilation of the same upstream
+#   registry — which is openly licensed and has lat/lng for
+#   ~40,525 facilities. The join key is the shared numeric
+#   Facility ID. Match rate is ~63%.
+#
+#   Unmatched rows (mostly private clinics, drug stores,
+#   pharmacies — outside WHO AFRO's traditional coverage scope)
+#   are dropped downstream by the standard clean_coordinates
+#   step because they have no GPS.
+#
+#   See scripts/extraction/geocode_ethiopia.R in the portal repo
+#   for the same logic as a standalone script.
 #
 # Inputs (gitignored, supply locally):
 #   data/raw/ethiopia/ethiopia_facilities_source.csv
