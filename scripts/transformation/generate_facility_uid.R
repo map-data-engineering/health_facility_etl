@@ -26,7 +26,8 @@ library(dplyr)
   malawi   = "MWI",
   nigeria  = "NGA",
   botswana = "BWA",
-  kenya    = "KEN"
+  kenya    = "KEN",
+  ethiopia = "ETH"
 )
 
 generate_facility_uid <- function(df, country_name,

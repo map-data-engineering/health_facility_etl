@@ -150,3 +150,23 @@ kenya:
   open_date_column: null
   catchment_population_column: null
   urban_rural_strata_column: null
+
+ethiopia:
+  raw_file: data/raw/ethiopia/Ethiopia_HFR_2026.csv
+  data_source: "Ethiopia MoH Master Facility Registry (e-HFR), coordinates joined from HDX 2024"
+  facility_name_column: facility_name
+  facility_code_column: facility_code
+  admin1_column: admin1
+  admin2_column: admin2
+  admin3_column: admin3
+  admin4_column: null
+  zone_column: null
+  facility_type_column: facility_type
+  facility_ownership_column: facility_ownership
+  ownership_detail_column: null
+  latitude_column: latitude
+  longitude_column: longitude
+  operation_status_column: status
+  open_date_column: null
+  catchment_population_column: null
+  urban_rural_strata_column: null

@@ -1,0 +1,22 @@
+AfyaScope — Ethiopia Services Standardisation Report
+Generated       : 2026-06-15 09:28:44.817338
+Pipeline version: 2.0
+
+--- Row counts ---
+Total records        : 500524
+Unique facilities    : 29164
+Matched facility_uid : 484926 (96.9%)
+Unmatched uid        : 15598
+include_in_analysis  : 445361
+needs_review TRUE    : 39
+
+--- Domain distribution ---
+  Clinical Services                   172256 (34.4%)
+  Community & Preventive Health       127241 (25.4%)
+  Reproductive & Maternal Health      116455 (23.3%)
+  Support Services                    55163 (11.0%)
+  Diagnostic Services                 20237 (4.0%)
+  HIV/AIDS Services                   9172 (1.8%)
+
+--- Unmatched crosswalk rows ---
+  None

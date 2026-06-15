@@ -1,0 +1,41 @@
+HealthScape — Standardized Data Report
+Country      : Ethiopia
+Generated    : 2026-06-15 09:24:54.981034
+Rows         : 40035
+Columns      : 29
+
+Column completeness (% non-null):
+  facility_code                       100.0%
+  facility_name                       100.0%
+  facility_type                       100.0%
+  admin1                              100.0%
+  admin2                              100.0%
+  admin3                               99.0%
+  latitude                            100.0%
+  longitude                           100.0%
+  status                              100.0%
+  ownership                           100.0%
+  country                             100.0%
+  data_source                         100.0%
+  coordinate_valid                    100.0%
+  open_date                             0.0%
+  open_year                             0.0%
+  uid                                 100.0%
+  zone                                  0.0%
+  coordinate_source                     0.0%
+  ownership_detail                      0.0%
+  catchment_population                  0.0%
+  urban_rural_strata                    0.0%
+  inpatient                             0.0%
+  outpatient                            0.0%
+  maternity                             0.0%
+  emergency                             0.0%
+  laboratory                            0.0%
+  malaria_services                      0.0%
+  extraction_date                       0.0%
+  data_quality_flag                   100.0%
+
+Data quality flag distribution:
+
+  high medium 
+ 40022     13 

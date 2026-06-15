@@ -63,6 +63,8 @@ standard_columns:
       - ZMB
       - NGA
       - BWA
+      - KEN
+      - ETH
 
   country_name:
     type: string
@@ -75,6 +77,8 @@ standard_columns:
       - Zambia
       - Nigeria
       - Botswana
+      - Kenya
+      - Ethiopia
 
   # -----------------------------------------------------------
   # SERVICE HIERARCHY  (3-level standard)

@@ -1,5 +1,5 @@
 AfyaScope — Kenya Services Standardisation Report
-Generated       : 2026-06-01 16:28:53.228241
+Generated       : 2026-06-15 09:28:41.641156
 Pipeline version: 2.0
 
 --- Row counts ---

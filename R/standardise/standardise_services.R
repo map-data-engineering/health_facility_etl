@@ -88,6 +88,23 @@ SERVICE_CONFIG <- list(
     source_category_id  = "service_category",
     source_service_name = "service_detail",
     date_col            = NULL
+  ),
+
+  ETH = list(
+    country_name   = "Ethiopia",
+    raw_path       = "data/raw/ethiopia/ethiopia_services_raw.csv",
+    crosswalk_path = "crosswalks/eth_services_crosswalk.csv",
+    # Raw services file produced by scripts/extraction/extract_ethiopia.R
+    # — long format (facility_code, service_category, service_name)
+    # unnested from the four semicolon-joined columns in the
+    # MoH source CSV (Clinical/Diagnostic/Support/24Hr).
+    join_keys      = c("service_category" = "source_category",
+                       "service_name"     = "source_service_name"),
+    source_service_id   = NULL,
+    source_type_id      = NULL,
+    source_category_id  = "service_category",
+    source_service_name = "service_name",
+    date_col            = NULL
   )
 
   # ── Add future countries here ──────────────────────────────
@@ -238,13 +255,30 @@ standardise_services <- function(
   # ── 6. Save output ───────────────────────────────────────────
   if (!dir.exists(output_dir))
     dir.create(output_dir, recursive = TRUE)
-  
+
   out_file <- tolower(paste0(cfg$country_name,
                              "_services_standardized.csv"))
   out_path <- file.path(output_dir, out_file)
-  write_csv(out, out_path)
-  cat(sprintf("[%s services] Saved: %s (%d rows)\n",
-              country_iso, out_path, nrow(out)))
+
+  # Slim columns for the published CSV. We drop:
+  #   - uid (service-level row id; cheap to regenerate, not used downstream)
+  #   - source_url, pipeline_version, extracted_date (constants per run)
+  #   - source_service_id, source_type_id (NA in most countries)
+  # This is the portal-facing schema. The full schema is still
+  # available in the in-memory `out` for any downstream R code that
+  # needs it within the same pipeline run.
+  out_slim <- out %>%
+    select(
+      facility_uid, facility_code, country_iso, country_name,
+      service_domain, service_group, service_name,
+      source_category_id, source_service_name,
+      is_clinical, is_malaria_related,
+      include_in_analysis, needs_review
+    )
+
+  write_csv(out_slim, out_path)
+  cat(sprintf("[%s services] Saved: %s (%d rows, slim schema)\n",
+              country_iso, out_path, nrow(out_slim)))
   
   # ── 7. QA report ────────────────────────────────────────────
   report_path <- file.path(output_dir,
